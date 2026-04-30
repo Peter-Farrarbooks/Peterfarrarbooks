@@ -1,7 +1,13 @@
 media:
   input: "images"
   output: "/images"
+  # Replace the URL below with your actual Cloudflare address or peterfarrarbooks.com
+  url: "https://peterfarrarbooks.com/images" 
 
+content:
+  - name: pages
+    label: Website Pages
+    # ... the rest of your code ...
 content:
   - name: pages
     label: Website Pages
