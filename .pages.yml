@@ -1,0 +1,21 @@
+media:
+  input: "images"
+  output: "/images"
+
+content:
+  - name: pages
+    label: Website Pages
+    type: collection
+    path: ""
+    extension: html
+    fields:
+      - { name: body, label: Page Content, type: rich-text, options: { format: html } }
+
+  - name: books
+    label: My Books
+    type: collection
+    path: "books"
+    extension: html
+    fields:
+      - { name: title, label: Book Title, type: string }
+      - { name: body, label: Book Description, type: rich-text, options: { format: html } }
