@@ -1,0 +1,101 @@
+<!-- ================================================
+     SEO HEAD BLOCKS — paste into each page's <head>
+     Replace the CSS link if needed: css/styles.css
+     ================================================ -->
+
+
+<!-- ====== ABOUT PAGE (about.html) ====== -->
+<meta name="description" content="About Peter Farrar — IT leader, professional photographer, and author of five books including Leadership: The Culture Fix and The Complete Photography Field Guide.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/about.html">
+<title>About Peter Farrar | Author, Photographer & Leadership Expert</title>
+<meta property="og:title" content="About Peter Farrar | Author, Photographer & Leadership Expert">
+<meta property="og:description" content="From the US Senate to UK defence — IT leader, photographer, and author of five practical books on leadership and photography.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/about.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Peter Farrar Books">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+
+
+<!-- ====== BOOKS PAGE (books.html) ====== -->
+<meta name="description" content="All books by Peter Farrar — the Mastering Digital Photography series, The Complete Photography Field Guide, and Leadership: The Culture Fix. Available on Amazon.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/books.html">
+<title>Books by Peter Farrar | Photography & Leadership</title>
+<meta property="og:title" content="Books by Peter Farrar | Photography & Leadership">
+<meta property="og:description" content="Five published books on leadership and photography — practical guides written from 30+ years of real-world experience. All available on Amazon.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/books.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Peter Farrar Books">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+
+
+<!-- ====== BLOG PAGE (blog.html) ====== -->
+<meta name="description" content="The Peter Farrar blog — photography insights, leadership thinking, and updates on new books. Practical articles written from real-world experience.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/blog.html">
+<title>Blog | Peter Farrar — Photography & Leadership Insights</title>
+<meta property="og:title" content="Blog | Peter Farrar — Photography & Leadership Insights">
+<meta property="og:description" content="Photography insights, leadership thinking, and updates on new books from Peter Farrar.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Peter Farrar Books">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+
+
+<!-- ====== COACHING PAGE (coaching.html) ====== -->
+<meta name="description" content="Leadership and photography coaching from Peter Farrar — practical guidance drawn from 30+ years of IT leadership and professional photography experience.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/coaching.html">
+<title>Coaching | Peter Farrar — Leadership & Photography Guidance</title>
+<meta property="og:title" content="Coaching | Peter Farrar — Leadership & Photography Guidance">
+<meta property="og:description" content="Practical leadership and photography guidance from Peter Farrar — drawn from 30+ years of real-world experience.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/coaching.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Peter Farrar Books">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+
+
+<!-- ====== COMING SOON PAGE (coming-soon.html) ====== -->
+<meta name="description" content="New books coming from Peter Farrar in 2026 — leadership and photography titles currently in development.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/coming-soon.html">
+<title>Coming 2026 | New Books from Peter Farrar</title>
+<meta property="og:title" content="Coming 2026 | New Books from Peter Farrar">
+<meta property="og:description" content="New leadership and photography books from Peter Farrar — coming in 2026.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/coming-soon.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Peter Farrar Books">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+
+
+<!-- ====== CONTACT PAGE (contact.html) ====== -->
+<meta name="description" content="Contact Peter Farrar — author, photographer and leadership expert. Get in touch for coaching enquiries, speaking, or general questions.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/contact.html">
+<title>Contact Peter Farrar | Author & Leadership Expert</title>
+<meta property="og:title" content="Contact Peter Farrar | Author & Leadership Expert">
+<meta property="og:description" content="Get in touch with Peter Farrar for coaching enquiries, speaking opportunities, or general questions.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Peter Farrar Books">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+
+
+<!-- ====== PRIVACY PAGE (privacy.html) ====== -->
+<meta name="description" content="Privacy policy for peterfarrarbooks.com — how your data is used and protected.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/privacy.html">
+<title>Privacy Policy | Peter Farrar Books</title>
