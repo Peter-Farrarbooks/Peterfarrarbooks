@@ -1,13 +1,8 @@
 media:
   input: "images"
   output: "/images"
-  # Replace the URL below with your actual Cloudflare address or peterfarrarbooks.com
-  url: "https://be9e7ce3.peterfarrarbooks.pages.dev/images/" 
+  url: "https://be9e7ce3.peterfarrarbooks.pages.dev/images/"
 
-content:
-  - name: pages
-    label: Website Pages
-    # ... the rest of your code ...
 content:
   - name: pages
     label: Website Pages
@@ -15,6 +10,8 @@ content:
     path: ""
     extension: html
     fields:
+      - { name: title, label: Page Title (browser tab), type: string }
+      - { name: meta_description, label: Meta Description (SEO), type: string }
       - { name: body, label: Page Content, type: rich-text, options: { format: html } }
 
   - name: books
@@ -24,4 +21,21 @@ content:
     extension: html
     fields:
       - { name: title, label: Book Title, type: string }
-      - { name: body, label: Book Description, type: rich-text, options: { format: html } }
+      - { name: category, label: Category (e.g. Photography · Book 1), type: string }
+      - { name: description, label: Short Description, type: string }
+      - { name: cover_image, label: Cover Image, type: image }
+      - { name: amazon_url, label: Amazon Buy Link, type: string }
+      - { name: body, label: Full Book Description, type: rich-text, options: { format: html } }
+
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: "blog"
+    extension: html
+    fields:
+      - { name: title, label: Post Title, type: string }
+      - { name: date, label: Publish Date, type: date }
+      - { name: category, label: Category (Photography or Leadership), type: string }
+      - { name: featured_image, label: Featured Image, type: image }
+      - { name: meta_description, label: Meta Description (SEO), type: string }
+      - { name: body, label: Post Content, type: rich-text, options: { format: html } }
