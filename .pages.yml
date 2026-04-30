@@ -1,5 +1,5 @@
 media:
-  input: "images"
+  input: "peterfarrarbooks/images"
   output: "/images"
   url: "https://be9e7ce3.peterfarrarbooks.pages.dev/images/"
 
@@ -7,7 +7,7 @@ content:
   - name: pages
     label: Website Pages
     type: collection
-    path: ""
+    path: "peterfarrarbooks"
     extension: html
     fields:
       - { name: title, label: Page Title (browser tab), type: string }
@@ -17,7 +17,7 @@ content:
   - name: books
     label: My Books
     type: collection
-    path: "books"
+    path: "peterfarrarbooks/books"
     extension: html
     fields:
       - { name: title, label: Book Title, type: string }
@@ -30,7 +30,7 @@ content:
   - name: blog
     label: Blog Posts
     type: collection
-    path: "blog"
+    path: "peterfarrarbooks/blog"
     extension: html
     fields:
       - { name: title, label: Post Title, type: string }
