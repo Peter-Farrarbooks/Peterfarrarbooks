@@ -2,7 +2,7 @@ media:
   input: "images"
   output: "/images"
   # Replace the URL below with your actual Cloudflare address or peterfarrarbooks.com
-  url: "https://peterfarrarbooks.com/images" 
+  url: "https://be9e7ce3.peterfarrarbooks.pages.dev/images/" 
 
 content:
   - name: pages
