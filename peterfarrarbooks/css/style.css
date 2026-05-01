@@ -128,6 +128,17 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 
+/* --- SHARED SECTION INTRO --- */
+/* Used under h2 headings as a subtitle/lead paragraph */
+.section-intro {
+  color: var(--text-light);
+  font-size: 1.02rem;
+  max-width: 680px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  text-align: center;
+}
+
 /* ============================================
    HEADER
    ============================================ */
@@ -301,7 +312,7 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   ABOUT STRIP
+   ABOUT STRIP (homepage)
    ============================================ */
 .about-strip {
   padding: 80px 0;
@@ -390,7 +401,7 @@ ul { list-style: none; }
   gap: 32px;
 }
 .books-grid.three-col { grid-template-columns: repeat(3, 1fr); }
-.books-grid.two-col { grid-template-columns: repeat(2, 1fr); }
+.books-grid.two-col   { grid-template-columns: repeat(2, 1fr); }
 .book-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -405,9 +416,7 @@ ul { list-style: none; }
   box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
 }
-.book-card-wide {
-  flex-direction: row;
-}
+.book-card-wide { flex-direction: row; }
 .book-cover {
   background: var(--off-white);
   display: flex;
@@ -456,13 +465,10 @@ ul { list-style: none; }
   margin-bottom: 20px;
   flex: 1;
 }
-.books-cta {
-  text-align: center;
-  margin-top: 48px;
-}
+.books-cta { text-align: center; margin-top: 48px; }
 
 /* ============================================
-   BLOG PREVIEW
+   BLOG PREVIEW (homepage)
    ============================================ */
 .blog-preview {
   padding: 80px 0;
@@ -489,9 +495,7 @@ ul { list-style: none; }
   height: 200px;
   object-fit: cover;
 }
-.blog-card-body {
-  padding: 20px 24px 24px;
-}
+.blog-card-body { padding: 20px 24px 24px; }
 .blog-tag {
   font-family: var(--font-sans);
   font-size: 0.72rem;
@@ -508,17 +512,12 @@ ul { list-style: none; }
   color: var(--navy);
   line-height: 1.4;
 }
-.blog-card-body h3 a {
-  color: var(--navy);
-}
+.blog-card-body h3 a { color: var(--navy); }
 .blog-card-body h3 a:hover { color: var(--gold); }
-.blog-cta {
-  text-align: center;
-  margin-top: 40px;
-}
+.blog-cta { text-align: center; margin-top: 40px; }
 
 /* ============================================
-   COACHING CTA
+   COACHING CTA BANNER
    ============================================ */
 .coaching-cta {
   background: var(--navy-dark);
@@ -537,10 +536,7 @@ ul { list-style: none; }
   color: var(--white);
   margin-bottom: 8px;
 }
-.coaching-cta-text p {
-  color: rgba(255,255,255,0.7);
-  font-size: 1rem;
-}
+.coaching-cta-text p { color: rgba(255,255,255,0.7); font-size: 1rem; }
 
 /* ============================================
    FOOTER
@@ -587,9 +583,7 @@ ul { list-style: none; }
   font-weight: 700;
 }
 .footer-nav ul li,
-.footer-social ul li {
-  margin-bottom: 8px;
-}
+.footer-social ul li { margin-bottom: 8px; }
 .footer-nav a,
 .footer-social a {
   color: rgba(255,255,255,0.65);
@@ -597,9 +591,7 @@ ul { list-style: none; }
   transition: color var(--transition);
 }
 .footer-nav a:hover,
-.footer-social a:hover {
-  color: var(--gold);
-}
+.footer-social a:hover { color: var(--gold); }
 .footer-bottom {
   padding: 20px 0;
   background: var(--navy-dark);
@@ -610,9 +602,7 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.45);
   text-align: center;
 }
-.footer-bottom a {
-  color: rgba(255,255,255,0.55);
-}
+.footer-bottom a { color: rgba(255,255,255,0.55); }
 .footer-bottom a:hover { color: var(--gold); }
 
 /* ============================================
@@ -646,11 +636,9 @@ ul { list-style: none; }
 }
 
 /* ============================================
-   ABOUT PAGE
+   ABOUT PAGE — main bio grid
    ============================================ */
-.about-content {
-  padding: 80px 0;
-}
+.about-content { padding: 80px 0; }
 .about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -661,7 +649,7 @@ ul { list-style: none; }
   font-family: var(--font-serif);
   font-size: 1.5rem;
   color: var(--navy);
-  margin: 32px 0 16px;
+  margin: 36px 0 16px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--gold-pale);
 }
@@ -672,6 +660,7 @@ ul { list-style: none; }
   font-size: 1rem;
   line-height: 1.8;
 }
+.about-body em { color: var(--navy); font-style: italic; }
 .about-sidebar .author-photo {
   width: 100%;
   border-radius: var(--radius);
@@ -701,11 +690,274 @@ ul { list-style: none; }
 }
 
 /* ============================================
+   TESTIMONIALS — colleague quotes
+   ============================================ */
+.testimonials-section {
+  padding: 80px 0;
+  background: var(--navy-dark);
+}
+.testimonials-section h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 12px;
+}
+.testimonials-section .section-intro { color: rgba(255,255,255,0.6); }
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.testimonial-card {
+  background: var(--navy-mid);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.testimonial-card p {
+  font-family: var(--font-serif);
+  font-size: 0.97rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.75;
+  font-style: italic;
+  flex: 1;
+}
+.testimonial-card footer {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-style: normal;
+  line-height: 1.5;
+}
+.testimonial-card cite {
+  display: block;
+  color: rgba(255,255,255,0.5);
+  font-style: normal;
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+/* ============================================
+   READER REVIEWS — on dark off-white background
+   ============================================ */
+.reviews-section {
+  padding: 60px 0;
+  background: var(--off-white);
+}
+.reviews-section h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 2vw, 1.9rem);
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 36px;
+}
+.reviews-section .testimonials-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reviews-section .testimonial-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+}
+.reviews-section .testimonial-card p {
+  color: var(--text-light);
+}
+.reviews-section .testimonial-card footer {
+  color: var(--navy);
+}
+
+/* ============================================
+   YOUTUBE FILM GRID
+   ============================================ */
+.film-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+.film-section h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 12px;
+}
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+.film-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition);
+  background: var(--white);
+}
+.film-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+/* Responsive 16:9 iframe wrapper */
+.film-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: var(--navy-dark);
+}
+.film-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.film-label {
+  padding: 14px 16px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 600;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================
+   COACHING PAGE — upgraded two-column layout
+   ============================================ */
+.coaching-section { padding: 80px 0; }
+.coaching-intro {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 1.05rem;
+}
+.coaching-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 60px;
+}
+.coaching-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  text-align: center;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.coaching-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+.coaching-card .coaching-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  display: block;
+}
+.coaching-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.coaching-card h3 em { color: var(--gold); font-style: italic; }
+.coaching-card p { color: var(--text-light); font-size: 0.92rem; }
+
+/* Coaching discipline blocks (two-column) */
+.coaching-disciplines {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+.coaching-discipline {
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+.coaching-discipline h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+.coaching-discipline h3 em { color: var(--gold); font-style: italic; }
+.coaching-discipline p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+.coaching-discipline ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+.coaching-discipline ul li {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--text-light);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.coaching-discipline ul li:last-child { border-bottom: none; }
+.coaching-discipline ul li::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Coaching process note */
+.coaching-process {
+  background: var(--off-white);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 28px 32px;
+  margin: 48px 0;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.coaching-process h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+.coaching-process p {
+  color: var(--text-light);
+  font-size: 0.97rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+.coaching-process p:last-child { margin-bottom: 0; }
+
+/* ============================================
    CONTACT PAGE
    ============================================ */
-.contact-section {
-  padding: 80px 0;
-}
+.contact-section { padding: 80px 0; }
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -718,10 +970,7 @@ ul { list-style: none; }
   color: var(--navy);
   margin-bottom: 16px;
 }
-.contact-info p {
-  color: var(--text-light);
-  margin-bottom: 16px;
-}
+.contact-info p { color: var(--text-light); margin-bottom: 16px; }
 .contact-social {
   display: flex;
   gap: 12px;
@@ -777,9 +1026,7 @@ ul { list-style: none; }
 /* ============================================
    BLOG PAGE
    ============================================ */
-.blog-section {
-  padding: 80px 0;
-}
+.blog-section { padding: 80px 0; }
 .blog-full-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -820,10 +1067,7 @@ ul { list-style: none; }
   color: var(--navy);
   margin-bottom: 10px;
 }
-.coming-card p {
-  color: var(--text-light);
-  font-size: 0.95rem;
-}
+.coming-card p { color: var(--text-light); font-size: 0.95rem; }
 .coming-badge {
   display: inline-block;
   background: var(--gold-pale);
@@ -864,49 +1108,6 @@ ul { list-style: none; }
 .privacy-section ul { padding-left: 20px; list-style: disc; }
 
 /* ============================================
-   COACHING PAGE
-   ============================================ */
-.coaching-section {
-  padding: 80px 0;
-}
-.coaching-intro {
-  max-width: 700px;
-  margin: 0 auto 60px;
-  text-align: center;
-  color: var(--text-light);
-  font-size: 1.05rem;
-}
-.coaching-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-bottom: 60px;
-}
-.coaching-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 28px 24px;
-  text-align: center;
-  background: var(--white);
-  box-shadow: var(--shadow);
-}
-.coaching-card .coaching-icon {
-  font-size: 2rem;
-  margin-bottom: 16px;
-  display: block;
-}
-.coaching-card h3 {
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
-  color: var(--navy);
-  margin-bottom: 10px;
-}
-.coaching-card p {
-  color: var(--text-light);
-  font-size: 0.92rem;
-}
-
-/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 900px) {
@@ -923,15 +1124,29 @@ ul { list-style: none; }
   .blog-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .coaching-grid { grid-template-columns: 1fr 1fr; }
+  .coaching-disciplines { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .coming-grid { grid-template-columns: 1fr; }
   .blog-full-grid { grid-template-columns: 1fr; }
   .coaching-cta-inner { flex-direction: column; text-align: center; }
+  .testimonials-grid { grid-template-columns: 1fr 1fr; }
+  .film-grid { grid-template-columns: 1fr 1fr; }
+  .reviews-section .testimonials-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
-  .site-nav { display: none; position: absolute; top: 68px; left: 0; right: 0; background: var(--navy-dark); flex-direction: column; padding: 16px 0; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--navy-dark);
+    flex-direction: column;
+    padding: 16px 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
   .site-nav.open { display: flex; }
   .site-nav ul { flex-direction: column; gap: 0; width: 100%; }
   .site-nav a { display: block; padding: 12px 24px; border-radius: 0; }
@@ -943,4 +1158,8 @@ ul { list-style: none; }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; }
   .coaching-grid { grid-template-columns: 1fr; }
   .hero { padding: 48px 0 40px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .film-grid { grid-template-columns: 1fr; }
+  .reviews-section .testimonials-grid { grid-template-columns: 1fr; }
+  .coaching-cta-inner { flex-direction: column; text-align: center; }
 }
