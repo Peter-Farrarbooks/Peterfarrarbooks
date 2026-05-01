@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Leadership and photography coaching from Peter Farrar.">
+<meta name="description" content="Leadership and photography coaching from Peter Farrar. Practical guidance on workplace culture, management, and building a successful photography business from real-world experience.">
+<meta name="robots" content="index, follow">
 
-<title>Leadership & Photography Coaching | Peter Farrar</title>
+<link rel="canonical" href="https://www.peterfarrarbooks.com/coaching.html">
 
-<!-- ✅ CSS -->
+<title>Leadership &amp; Photography Coaching | Peter Farrar</title>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Leadership &amp; Photography Coaching with Peter Farrar">
+<meta property="og:description" content="Practical 1-to-1 coaching and insights on leadership, workplace culture, and photography business growth.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/coaching.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/coaching.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Peter Farrar Books">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.peterfarrarbooks.com/images/coaching.jpg">
+
+<!-- ✅ Service schema (kept) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Leadership and Photography Coaching",
+  "provider": {
+    "@type": "Person",
+    "name": "Peter Farrar"
+  },
+  "areaServed": "UK",
+  "description": "Coaching on leadership, workplace culture, management, photography technique and photography business development."
+}
+</script>
+
+<!-- ✅ CSS (use both paths to avoid breakage if one differs) -->
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- tiny form styling so it looks good even if CSS changes -->
+<style>
+  .mini-form { display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
+  .mini-form input[type="email"]{
+    flex: 1 1 220px;
+    padding: 12px 14px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .mini-form button{
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
 
 </head>
 
@@ -26,13 +73,15 @@
       </a>
     </div>
 
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+
     <nav class="site-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="books.html">Books</a></li>
         <li><a href="coming-soon.html">Coming 2026</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="coaching.html" class="active">Coaching</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -41,107 +90,150 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="page-hero">
   <div class="container">
-
-    <h1>Leadership and Photography Coaching</h1>
-
-    <p>
-      Coaching and practical guidance on leadership, workplace culture, management, and professional photography.
-    </p>
-
+    <p class="breadcrumb">Coaching &amp; Insights</p>
+    <h1>Leadership &amp; Photography Guidance</h1>
+    <p>Practical thinking from 30 years of experience — direct from the blog.</p>
   </div>
 </section>
 
-<!-- MAIN CONTENT -->
 <section class="coaching-section">
   <div class="container">
 
-    <p>
-      Drawing on over 30 years of real-world experience in IT leadership and professional photography.
+    <p class="coaching-intro">
+      Drawing on over 30 years of hands-on experience in IT leadership, team management, and professional photography — practical guidance you can actually use.
     </p>
 
     <div class="coaching-grid">
 
       <div class="coaching-card">
-        <h3>Leadership and Culture</h3>
+        <span class="coaching-icon">📋</span>
+        <h3>Leadership &amp; Culture</h3>
         <p>
-          Learn more in 
-          <a href="books.html#leadership">Leadership: The Culture Fix</a>.
+          Practical frameworks for managers at every level — from fixing toxic culture to building accountable, high-performing teams.
+          Learn more in <a href="books.html#leadership"><em>Leadership: The Culture Fix</em></a>.
         </p>
+
+        <!-- ✅ RESTORED EXTERNAL FORM MAPPING (Mailchimp) -->
+        <!-- This is the exact working action URL from your original coaching doc -->
+        <div style="margin-top:14px;">
+          <small style="display:block; opacity:0.8; margin-bottom:6px;">Get Leadership Insights</small>
+          <form action="https://peterfarrarbooks.us18.list-manage.com/subscribe/post?u=91252148528291d77c15da94c&amp;id=30590c4c71&amp;f_id=00ada3e6f0" method="post" target="_blank" rel="noopener">
+            <div class="mini-form">
+              <input type="email" name="EMAIL" placeholder="Email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
       </div>
 
       <div class="coaching-card">
+        <span class="coaching-icon">📷</span>
         <h3>Photography Technique</h3>
         <p>
-          Explore the 
-          <a href="books.html#series">photography book series</a>.
+          From foundations through to professional-level disciplines — lighting, posing, workflow, and the business of photography.
+          Explore the <a href="books.html#series">photography series</a>.
         </p>
+
+        <!-- ✅ RESTORED EXTERNAL FORM MAPPING (Mailchimp) -->
+        <!-- This is the exact working action URL from your original coaching doc -->
+        <div style="margin-top:14px;">
+          <small style="display:block; opacity:0.8; margin-bottom:6px;">Get Photography Insights</small>
+          <form action="https://peterfarrarbooks.us18.list-manage.com/subscribe/post?u=91252148528291d77c15da94c&amp;id=30590c4c71&amp;f_id=00aea3e6f0" method="post" target="_blank" rel="noopener">
+            <div class="mini-form">
+              <input type="email" name="EMAIL" placeholder="Email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+          </form>
+        </div>
       </div>
 
       <div class="coaching-card">
+        <span class="coaching-icon">💼</span>
         <h3>Photography Business</h3>
         <p>
-          How to scale a photography business from real-world experience.
+          How to price, market, and scale a photography business — built from real experience scaling from $300 to $4,600 per wedding.
         </p>
       </div>
 
     </div>
 
-  </div>
-</section>
-
-<!-- ✅ ✅ ✅ RESTORED CONTACT FORM -->
-<section class="contact-section">
-  <div class="container">
-
-    <h2>Enquire About Coaching</h2>
-
-    <!-- IMPORTANT: action="mailto:" keeps it simple -->
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-
-      <input type="text" name="name" placeholder="Your Name" required>
-
-      <input type="email" name="email" placeholder="Your Email" required>
-
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-      <button type="submit">Send Enquiry</button>
-
-    </form>
+    <div style="text-align:center; max-width:640px; margin:40px auto 0;">
+      <h2>Start with the Blog</h2>
+      <p>
+        All coaching insights and practical guidance are shared through the <a href="blog.html">blog</a> — photography technique, leadership thinking, and business advice drawn directly from real experience.
+      </p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:18px;">
+        <a href="blog.html" class="btn btn-primary">Read the Blog</a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
 
   </div>
 </section>
 
-<!-- CTA -->
 <section class="coaching-cta">
-  <div class="container">
-
-    <p>
-      View all 
-      <a href="books.html">published books</a>.
-    </p>
-
+  <div class="container coaching-cta-inner">
+    <div class="coaching-cta-text">
+      <h2>The Books</h2>
+      <p>Five published <a href="books.html">books</a> covering leadership, culture, and professional photography.</p>
+    </div>
+    <a href="books.html" class="btn btn-primary">View All Books</a>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="container">
+  <div class="container footer-inner">
 
-    <p>Peter Farrar Books</p>
+    <div class="footer-brand">
+      <span class="logo-name">Peter Farrar</span><span class="logo-sub">Books</span>
+      <p>Author · Photographer · Leadership Expert</p>
+    </div>
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="footer-nav">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Published Books</a></li>
+        <li><a href="coming-soon.html">Coming 2026</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="about.html">About Peter</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
 
+    <div class="footer-nav">
+      <h4>Books</h4>
+      <ul>
+        <li><a href="books.html#series">Photography Series</a></li>
+        <li><a href="books.html#field-guide">Complete Field Guide</a></li>
+        <li><a href="books.html#leadership">Leadership: The Culture Fix</a></li>
+        <li><a href="coming-soon.html">Coming Soon</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/pfarrar/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/Kennethstudios/" target="_blank" rel="noopener">X (Twitter)</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; Peter Farrar. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-
 </body>
 </html>
