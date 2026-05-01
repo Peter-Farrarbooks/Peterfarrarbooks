@@ -9,7 +9,7 @@
 
 <title>Leadership & Photography Coaching | Peter Farrar</title>
 
-<!-- ✅ FIXED CSS -->
+<!-- ✅ CSS -->
 <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -19,7 +19,6 @@
 <header class="site-header">
   <div class="container header-inner">
 
-    <!-- ✅ FIXED LOGO -->
     <div class="logo">
       <a href="index.html">
         <span class="logo-name">Peter Farrar</span>
@@ -27,7 +26,6 @@
       </a>
     </div>
 
-    <!-- ✅ FIXED NAV -->
     <nav class="site-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -47,23 +45,21 @@
 <section class="page-hero">
   <div class="container">
 
-    <p class="breadcrumb">Coaching & Insights</p>
-
     <h1>Leadership and Photography Coaching</h1>
 
-    <p class="page-intro">
-      Coaching and practical guidance on leadership, workplace culture, management, and professional photography — built from over 30 years of real-world experience.
+    <p>
+      Coaching and practical guidance on leadership, workplace culture, management, and professional photography.
     </p>
 
   </div>
 </section>
 
-<!-- MAIN -->
+<!-- MAIN CONTENT -->
 <section class="coaching-section">
   <div class="container">
 
-    <p class="coaching-intro">
-      Drawing on over 30 years of hands-on experience in IT leadership, team management, and professional photography.
+    <p>
+      Drawing on over 30 years of real-world experience in IT leadership and professional photography.
     </p>
 
     <div class="coaching-grid">
@@ -71,7 +67,7 @@
       <div class="coaching-card">
         <h3>Leadership and Culture</h3>
         <p>
-          Practical frameworks for managers at every level. Learn more in 
+          Learn more in 
           <a href="books.html#leadership">Leadership: The Culture Fix</a>.
         </p>
       </div>
@@ -79,7 +75,7 @@
       <div class="coaching-card">
         <h3>Photography Technique</h3>
         <p>
-          Lighting, posing, workflow, and structured technical development. Explore the 
+          Explore the 
           <a href="books.html#series">photography book series</a>.
         </p>
       </div>
@@ -87,46 +83,51 @@
       <div class="coaching-card">
         <h3>Photography Business</h3>
         <p>
-          How to price, market, and scale a photography business built from real-world experience.
+          How to scale a photography business from real-world experience.
         </p>
       </div>
 
     </div>
 
-    <div style="text-align:center; margin-top:40px;">
-      <h2>Start with the Blog</h2>
+  </div>
+</section>
 
-      <p>
-        All insights are shared through the 
-        <a href="blog.html">blog</a>.
-      </p>
+<!-- ✅ ✅ ✅ RESTORED CONTACT FORM -->
+<section class="contact-section">
+  <div class="container">
 
-      <a href="blog.html" class="btn btn-primary">Read the Blog</a>
-      <a href="contact.html" class="btn btn-outline">Get in Touch</a>
-    </div>
+    <h2>Enquire About Coaching</h2>
+
+    <!-- IMPORTANT: action="mailto:" keeps it simple -->
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit">Send Enquiry</button>
+
+    </form>
 
   </div>
 </section>
 
 <!-- CTA -->
 <section class="coaching-cta">
-  <div class="container coaching-cta-inner">
+  <div class="container">
 
-    <div class="coaching-cta-text">
-      <h2>The Books</h2>
-      <p>
-        Five published <a href="books.html">books</a> covering leadership and photography.
-      </p>
-    </div>
-
-    <a href="books.html" class="btn btn-primary">View All Books</a>
+    <p>
+      View all 
+      <a href="books.html">published books</a>.
+    </p>
 
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container footer-inner">
+  <div class="container">
 
     <p>Peter Farrar Books</p>
 
@@ -135,13 +136,11 @@
       <li><a href="books.html">Books</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
     </ul>
 
   </div>
 </footer>
 
-<!-- ✅ FIXED JS -->
 <script src="js/main.js"></script>
 
 </body>
