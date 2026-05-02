@@ -1,5 +1,28 @@
-/2023/*   /   301
-/2020/*   /   301
-/2021/*   /   301
-/2022/*   /   301
-/2024/*   /   301
+# ═══════════════════════════════════════════════════════════
+# Cloudflare Pages — _redirects
+# Place this file in the ROOT of your repo (not in /blog/)
+# ═══════════════════════════════════════════════════════════
+
+# ── Old Blogger post URLs → new site post URLs (301 permanent) ──
+
+/2026/04/itil-4-in-practice-what-companies.html        /blog/itil-4-in-practice/               301
+/2026/04/from-300-to-4600-what-actually-scales.html    /blog/scaling-photography-business/     301
+/2026/04/the-zone-system-explained-part-one.html        /blog/zone-system-part-one/             301
+/2026/04/from-top-performer-to-top-leader-why.html     /blog/from-top-performer-to-top-leader/ 301
+/2026/04/the-zone-system-explained-part-two.html        /blog/zone-system-part-two/             301
+/2026/06/good-managers-vs-bad-managers.html             /blog/good-managers-vs-bad-managers/    301
+
+# ── Old Blogger static page URLs → new site pages ──
+
+/p/leadership-photography-coaching.html                /coaching/      301
+/p/published-books.html                                /books/         301
+/p/about-peter-farrar.html                             /about/         301
+/p/privacy-policy-peter-farrar-books.html              /privacy/       301
+/p/coming-2026.html                                    /coming-soon/   301
+/p/leadership-culture-fix.html                         /books/         301
+/p/the-complete-photography-field-guide.html           /books/         301
+/p/contact.html                                        /contact/       301
+
+# ── Trailing slash consistency (optional) ──
+
+/blog                                                  /blog/          301
