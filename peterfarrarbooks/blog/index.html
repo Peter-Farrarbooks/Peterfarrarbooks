@@ -1,1 +1,413 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Photography insights, leadership thinking, and updates from Peter Farrar — author, photographer, and leadership expert.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/">
+<title>Blog | Peter Farrar Books</title>
+
+<meta property="og:title" content="Blog | Peter Farrar Books">
+<meta property="og:description" content="Photography insights, leadership thinking, and updates from Peter Farrar.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Peter Farrar Books">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XW133STPV9');
+</script>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<style>
+/* ── Blog Index — extends styles.css ── */
+
+.blog-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.filter-btn {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 7px 18px;
+  background: transparent;
+  border: 1px solid var(--border-mid);
+  color: var(--text-dim);
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(196,149,61,0.06);
+}
+
+/* Featured post */
+.post-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+  margin-bottom: 12px;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+.post-featured:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--gold-dim);
+}
+.post-featured__img {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+.post-featured__img img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  transition: transform 0.4s ease;
+}
+.post-featured:hover .post-featured__img img { transform: scale(1.03); }
+.post-featured__body {
+  padding: 44px 40px;
+  display: flex; flex-direction: column; justify-content: center;
+  border-left: 1px solid var(--border);
+}
+
+/* Shared */
+.post-tag {
+  font-family: var(--font-sans);
+  font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 10px; display: block;
+}
+.post-meta {
+  font-family: var(--font-sans);
+  font-size: 0.72rem; font-weight: 300;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text-dim); margin-bottom: 14px; display: block;
+}
+.post-title {
+  font-family: var(--font-serif);
+  font-weight: normal; color: var(--text);
+  line-height: 1.25; margin: 0 0 14px;
+}
+.post-title a { color: inherit; text-decoration: none; transition: color var(--transition); }
+.post-title a:hover { color: var(--gold); }
+.post-featured__body .post-title { font-size: clamp(1.1rem, 1.8vw, 1.45rem); }
+.post-excerpt {
+  font-family: var(--font-serif);
+  font-size: 0.95rem; color: var(--text-muted);
+  line-height: 1.75; margin: 0 0 24px;
+}
+.post-readmore {
+  font-family: var(--font-sans);
+  font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: gap var(--transition); margin-top: auto;
+}
+.post-readmore::after { content: '→'; }
+.post-readmore:hover { color: var(--gold-light); gap: 10px; }
+
+/* Divider */
+.blog-divider {
+  display: flex; align-items: center; gap: 20px;
+  margin: 36px 0;
+}
+.blog-divider::before,
+.blog-divider::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+.blog-divider span {
+  font-family: var(--font-sans);
+  font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--text-dim); white-space: nowrap;
+}
+
+/* Grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.post-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-card);
+  box-shadow: var(--shadow);
+  display: flex; flex-direction: column;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+.post-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  border-color: var(--gold-dim);
+}
+.post-card__img {
+  aspect-ratio: 16/9; overflow: hidden; flex-shrink: 0;
+}
+.post-card__img img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.4s ease;
+}
+.post-card:hover .post-card__img img { transform: scale(1.04); }
+.post-card__body {
+  padding: 22px 22px 26px;
+  display: flex; flex-direction: column; flex: 1;
+}
+.post-card__body .post-title { font-size: 1rem; flex: 1; margin-bottom: 16px; }
+.post-card__body .post-excerpt {
+  font-size: 0.88rem; margin-bottom: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .post-featured { grid-template-columns: 1fr; }
+  .post-featured__img { aspect-ratio: 16/9; }
+  .post-featured__body {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding: 28px;
+  }
+  .post-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .post-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <a href="/">
+        <span class="logo-name">Peter Farrar</span>
+        <span class="logo-sub">Books</span>
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Books</a></li>
+        <li><a href="/coming-soon">Coming 2026</a></li>
+        <li><a href="/blog" class="active">Blog</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero" style="text-align:left; padding-bottom:0;">
+    <div class="container">
+      <p class="breadcrumb">Home / Blog</p>
+      <h1>The <em>Blog</em></h1>
+      <p style="margin:0;">Photography insights, leadership thinking, and updates on new books and projects.</p>
+      <div class="blog-filters">
+        <button class="filter-btn active" data-filter="all">All Posts</button>
+        <button class="filter-btn" data-filter="leadership">Leadership</button>
+        <button class="filter-btn" data-filter="photography">Photography</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="blog-section">
+    <div class="container">
+
+      <article class="post-featured" data-category="leadership">
+        <div class="post-featured__img">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYXUSwhKqZMo8MdPatkb-Wa1iI2OjApNYSDfFa28YTD_pv78CCNQnuHPRzVbbcBQs5Wn9r-WXF5R49s2oDVCLSclrw8rTjz4t8q2lg_usDF8LLOa1cEcmgzBI5Ia4bOJnscpbRwfCBJ-ZFjZHh0-E4KGsLH5KuW6VkbdIF3snSz0kN7-iVxka2euZKf_rE/s1024/Maangerin2deep.webp" alt="Good Managers vs Bad Managers" loading="eager">
+        </div>
+        <div class="post-featured__body">
+          <span class="post-tag">Leadership &amp; Culture</span>
+          <span class="post-meta">May 2026</span>
+          <h2 class="post-title">
+            <a href="/blog/good-managers-vs-bad-managers/">Good Managers vs Bad Managers – The Behaviours That Shape Every Workplace</a>
+          </h2>
+          <p class="post-excerpt">Managers have a disproportionate influence over motivation, trust, performance, and retention. It is not job titles or corporate slogans that shape culture — it is the small behaviours repeated every day.</p>
+          <a href="/blog/good-managers-vs-bad-managers/" class="post-readmore">Read Post</a>
+        </div>
+      </article>
+
+      <div class="blog-divider"><span>More Posts</span></div>
+
+      <div class="post-grid">
+
+        <article class="post-card" data-category="leadership">
+          <div class="post-card__img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRjDVp_OsIdFMH9ZYVaFk0rYrJVBXK-0wHxDSH6F49cPZQhxAgyOzc9lSPBr5oEjCArugWyr3OyKTSCprEjrZ18GsRmCtZulUc6HOZkpjWRpRZzqbCjN-05KXMcNDeKXM4g9gDS-utrMHOat1Uo8bw42EGdy7R6pu_YZ93TT-YRCGDG6Ne2kJKmAQKFC2-/s2068/Leader2blog1.webp" alt="From Top Performer to Top Leader" loading="lazy">
+          </div>
+          <div class="post-card__body">
+            <span class="post-tag">Leadership &amp; Culture</span>
+            <span class="post-meta">April 2026</span>
+            <h3 class="post-title">
+              <a href="/blog/from-top-performer-to-top-leader/">From Top Performer to Top Leader – Why Great Employees Often Struggle as Managers</a>
+            </h3>
+            <p class="post-excerpt">Excellent individual contributors do not automatically become effective leaders. Management requires a complete shift in identity.</p>
+            <a href="/blog/from-top-performer-to-top-leader/" class="post-readmore">Read Post</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="leadership">
+          <div class="post-card__img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFhnjuV5u-rE6ZV2t_4nmeOHfNHUaPHqnu3kqnmSsYjMOSfa9GAdnY3dKuVJUtisSeu6mjae3RJPfmbC4wnFIR9HMdWczuNC7ZvNG5KeqCaqALzD5DEa7DCUbXoFUZP7C7bHqLOPWmZVQGUaBFjSkfgxLndUJdX86N9H0ofxLBa9KjX3wqr1pD530bLHMl/s910-rw/LeaderhipWebp.webp" alt="ITIL 4 in Practice" loading="lazy">
+          </div>
+          <div class="post-card__body">
+            <span class="post-tag">Leadership &amp; Culture</span>
+            <span class="post-meta">April 2026</span>
+            <h3 class="post-title">
+              <a href="/blog/itil-4-in-practice/">ITIL 4 in Practice: What Companies Expect vs Real Service Management Leadership</a>
+            </h3>
+            <p class="post-excerpt">Service management is far more dependent on leadership, culture, and execution than any framework alone. This gap is where most service desks succeed or fail.</p>
+            <a href="/blog/itil-4-in-practice/" class="post-readmore">Read Post</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="photography">
+          <div class="post-card__img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHNuvBl5CbI78l0WC8Fv1CTsZdzrQjR0r8EBiWL-HNDPHk_QqVQLHu8P4_6OeOtxd4LvqmXSOqlAHIEEv0RwQGfHLXgOYIZobPRhDT1VF8_LNQRMcKuYbQdyPddGkE9eYtBdZqwmzSYTOjFc2L0KTtsmidgJuDkm3th1x435IsMONWJQ7i_E2MKeppUQds/s2068/Zone2.webp" alt="The Zone System Part Two" loading="lazy">
+          </div>
+          <div class="post-card__body">
+            <span class="post-tag">Photography</span>
+            <span class="post-meta">April 2026</span>
+            <h3 class="post-title">
+              <a href="/blog/zone-system-part-two/">The Zone System Explained – Part Two: Applying It in Modern Digital Photography</a>
+            </h3>
+            <p class="post-excerpt">The tools have changed, but the thinking has not. How to apply the Zone System with histograms and RAW files in the digital era.</p>
+            <a href="/blog/zone-system-part-two/" class="post-readmore">Read Post</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="photography">
+          <div class="post-card__img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl9X8lAGsF1GTUJh7ySyJUHfxNuWPFgAiGpjPPqT7JQCARKbRWkLwhDC2K3hyTKdW5jY1vi-H9c9XNv_XxL_9PnXVgsKOOyW5VJdvlUSSf2tYSjUMNExl1HQJGKt_BjEQ-2-rGEE-SzeMF5UO-2qBAgsWdad7KYq2uGIK3j-mIa_QkEKBkjsLNPc96/s800/LanscapeBW.webp" alt="The Zone System Part One" loading="lazy">
+          </div>
+          <div class="post-card__body">
+            <span class="post-tag">Photography</span>
+            <span class="post-meta">April 2026</span>
+            <h3 class="post-title">
+              <a href="/blog/zone-system-part-one/">The Zone System Explained – Part One: Seeing Light Like Ansel Adams</a>
+            </h3>
+            <p class="post-excerpt">At the centre of Ansel Adams' mastery was the Zone System — one of the most useful ways any photographer can learn to truly see a scene.</p>
+            <a href="/blog/zone-system-part-one/" class="post-readmore">Read Post</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="photography">
+          <div class="post-card__img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOsR9b0AnVA7iwiRpywahDhqhtV5RXft3jMb3fbASTF8gKPmtTQA-yxKYhwBMx494oyDwwdWJiiJ41iCt9A73m9B5EUOrfM82NgHnWg-iDHKD3Wc9Z0SBUAiBnQKcNnViNWMp2eLMnnMCkwm-3OAbN5alsFf6_UEjRks79kktPR0e2kq0Mppte4qXWAw8n/s910-rw/CompletePhotographyWebp.webp" alt="From $300 to $4600" loading="lazy">
+          </div>
+          <div class="post-card__body">
+            <span class="post-tag">Photography &amp; Business</span>
+            <span class="post-meta">April 2026</span>
+            <h3 class="post-title">
+              <a href="/blog/scaling-photography-business/">From $300 to $4,600: What Actually Scales a Photography Business</a>
+            </h3>
+            <p class="post-excerpt">Most photography businesses don't fail because of a lack of talent. They fail because of weak positioning, poor pricing strategy, and inconsistent client experience.</p>
+            <a href="/blog/scaling-photography-business/" class="post-readmore">Read Post</a>
+          </div>
+        </article>
+
+      </div><!-- .post-grid -->
+    </div><!-- .container -->
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-name">Peter Farrar</span>
+      <span class="logo-sub">Books</span>
+      <p>Author · Photographer · Leadership Expert</p>
+    </div>
+    <div class="footer-nav">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Published Books</a></li>
+        <li><a href="/coming-soon">Coming 2026</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/about">About Peter</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <h4>Books</h4>
+      <ul>
+        <li><a href="/books#series">Photography Series</a></li>
+        <li><a href="/books#field-guide">Complete Field Guide</a></li>
+        <li><a href="/books#leadership">Leadership: The Culture Fix</a></li>
+        <li><a href="/coming-soon">Coming Soon</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/pfarrar/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/Kennethstudios/" target="_blank" rel="noopener">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; Peter Farrar. All Rights Reserved. | <a href="/privacy">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script>
+  const btns = document.querySelectorAll('.filter-btn');
+  const featured = document.querySelector('.post-featured');
+  const cards = document.querySelectorAll('.post-card');
+  const divider = document.querySelector('.blog-divider');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      const showFeatured = f === 'all' || featured.dataset.category === f;
+      featured.style.display = showFeatured ? '' : 'none';
+      divider.style.display = showFeatured ? '' : 'none';
+      cards.forEach(card => {
+        card.style.display = (f === 'all' || card.dataset.category === f) ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
