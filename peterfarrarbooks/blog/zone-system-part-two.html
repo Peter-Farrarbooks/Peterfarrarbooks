@@ -5,15 +5,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- EDIT: description, canonical, title, og tags, JSON-LD per post -->
-<meta name="description" content="POST DESCRIPTION">
+<meta name="description" content="Applying the Zone System in Modern Digital Photography">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/POST-SLUG/">
-<title>Zone System Part Two | Peter Farrar Books</title>
+<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/zone-system-part-two.html/">
+<title>The Zone System Explained - Part Two | Peter Farrar Books</title>
 
-<meta property="og:title" content="POST TITLE">
-<meta property="og:description" content="POST DESCRIPTION">
-<meta property="og:image" content="POST HERO IMAGE URL">
-<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/POST-SLUG/">
+<meta property="og:title" content="The Zone System Explained - Part Two">
+<meta property="og:description" content="Applying the Zone System in Modern Digital Photography">
+<meta property="og:image" content="https://wwww.peterfarrarbooks.com/images/zone2.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/zone-system-part-two.html/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Peter Farrar Books">
 
@@ -22,26 +22,31 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "POST TITLE",
-  "description": "POST DESCRIPTION",
-  "image": "POST HERO IMAGE URL",
+  "headline": "The Zone System Explained - Part Two",
+  "description": "Applying the Zone System in Modern Digital Photography",
+  "image": "https://www.peterfarrarbooks.com/images/zone2.jpg",
   "author": {
     "@type": "Person",
     "name": "Peter Farrar",
-    "url": "https://www.peterfarrarbooks.com/about/"
+    "url": "https://www.peterfarrarbooks.com/about.html"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Peter Farrar Books",
-    "logo": { "@type": "ImageObject", "url": "https://www.peterfarrarbooks.com/images/og-image.jpg" }
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.peterfarrarbooks.com/images/favicon.jpg"
+    }
   },
-  "datePublished": "YYYY-MM-DD",
-  "dateModified": "YYYY-MM-DD",
+  "datePublished": "2026-04-27",
+  "dateModified": "2026-04-27",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.peterfarrarbooks.com/blog/POST-SLUG/"
+    "@id": "https://www.peterfarrarbooks.com/blog/zone-system-part-two.html"
   },
-  "inLanguage": "en-GB"
+  "inLanguage": "en-GB",
+  "keywords": "Zone System, Digital Photography, Exposure Control, RAW processing",
+  "articleSection": "Photography"
 }
 </script>
 
@@ -88,8 +93,106 @@
 
 /* ── START: paste post <style> here ── */
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;600;700&display=swap');
 
-/* ── END: post style ── */
+.pf-post {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+}
+.pf-post * { box-sizing: border-box; }
+
+/* Global Gold Italics */
+.pf-post em { color: #b08559; font-style: italic; }
+
+.pf-post__label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 4px; text-transform: uppercase; color: #b08559;
+  display: flex; align-items: center; gap: 14px; margin-bottom: 22px;
+}
+.pf-post__label::before { content: ''; width: 36px; height: 1px; background: #b08559; flex-shrink: 0; }
+
+.pf-post h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(32px, 4.5vw, 52px); font-weight: 400;
+  color: #fff; line-height: 1.1; margin: 0 0 12px;
+}
+
+.pf-post__meta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px; font-weight: 300;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.4); margin-bottom: 40px;
+}
+.pf-post__meta span { color: rgba(176,133,89,0.6); margin: 0 8px; }
+
+.pf-post__divider {
+  width: 100%; height: 1px;
+  background: linear-gradient(to right, rgba(176,133,89,0.5), rgba(176,133,89,0.1));
+  margin: 0 0 44px;
+}
+
+.pf-post__cover { width: 100%; margin: 0 0 44px; }
+.pf-post__cover img { width: 100%; height: auto; display: block; border-radius: 2px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); }
+
+.pf-post p { margin: 0 0 24px; }
+.pf-post strong { color: #fff; font-weight: 500; }
+
+.pf-post h2, .pf-post h3 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400; color: #fff;
+  line-height: 1.2; margin: 52px 0 16px;
+}
+.pf-post h2 { font-size: 30px; padding-bottom: 10px; border-bottom: 1px solid rgba(176,133,89,0.2); }
+
+.pf-post ul { list-style: none; padding: 0; margin: 0 0 28px; }
+.pf-post ul li {
+  padding-left: 20px; position: relative;
+  margin-bottom: 12px; color: rgba(255,255,255,0.8);
+}
+.pf-post ul li::before {
+  content: ''; position: absolute; left: 0; top: 14px;
+  width: 8px; height: 1px; background: #b08559;
+}
+
+.pf-post__callout {
+  border-left: 2px solid #b08559;
+  margin: 48px 0; padding: 12px 0 12px 32px;
+  font-size: 24px; font-style: italic;
+  color: #fff; line-height: 1.6;
+}
+
+.pf-post__cta {
+  margin-top: 80px; border-top: 1px solid rgba(176,133,89,0.2);
+  padding-top: 48px; display: flex; gap: 32px; align-items: flex-start; background: rgba(176,133,89,0.03); padding: 40px; border-radius: 4px;
+}
+.pf-post__cta-cover { flex-shrink: 0; width: 120px; }
+.pf-post__cta-cover img { width: 100%; height: auto; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.5)); border-radius: 2px; }
+.pf-post__cta-text { flex: 1; }
+.pf-post__cta-label {
+  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: #b08559; margin-bottom: 10px;
+}
+.pf-post__cta-title { font-family: 'EB Garamond', serif; font-size: 24px; color: #fff; margin: 0 0 12px; }
+.pf-post__cta-desc { font-family: 'EB Garamond', serif; font-size: 17px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0 0 24px; }
+.pf-post__cta-links a {
+  font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; padding: 12px 28px;
+  color: #080806; background: #b08559; border: 1px solid #b08559; text-decoration: none;
+  transition: 0.3s ease; display: inline-block; cursor: pointer;
+}
+.pf-post__cta-links a:hover { background: transparent; color: #b08559; }
+
+@media (max-width: 600px) { 
+  .pf-post__cta { flex-direction: column; gap: 24px; padding: 24px; }
+  .pf-post__cta-cover { width: 100px; }
+}
 </style>
 </head>
 
@@ -121,7 +224,7 @@
 <main>
   <div class="container">
     <nav class="post-breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>SHORT POST TITLE
+      <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>Zone System Part Two
     </nav>
     <a href="/blog/" class="post-back">All Posts</a>
   </div>
@@ -134,8 +237,72 @@
   -->
 
   <div class="pf-post">
-    <!-- post content here -->
+<div class="pf-post">
+  <div class="pf-post__label">Photography</div>
+
+  <h1><em>The Zone System</em> Explained - Part Two</h1>
+  <h2>Applying It in <em>Modern Digital Photography</em></h2>
+
+  <p class="pf-post__meta">Peter Farrar <span>&#183;</span> April 2026</p>
+
+  <div class="pf-post__divider"></div>
+
+  <div class="pf-post__cover">
+    <img src="https://www.peterfarrarbooks.com/images/zone2.jpg" alt="Zion National Park photography illustrating digital zone system application">
   </div>
+
+  <p>In Part One, we established what the Zone System is and why it matters. <strong>The missing piece is execution.</strong></p>
+
+  <p>How do you take a method designed for large format film cameras and apply it in a world of mirrorless bodies, instant previews, and RAW processing? The answer is straightforward: the tools have changed, but the thinking has not.</p>
+
+  <h3><em>From Theory to Practice</em></h3>
+  <p>The core idea remains exactly as Ansel Adams intended: You decide where tones should fall, not the camera. Modern cameras simply give you faster feedback.</p>
+
+  <h3><em>Step 1: Meter for the Right Zone</em></h3>
+  <p>Your camera’s meter is calibrated to render everything as middle grey (Zone V). That is the default behaviour. If you photograph something bright snow, sand, white walls—the camera will darken it unless you intervene. Conversely, if you photograph something dark, it will brighten it.</p>
+
+  <p><strong>The Adjustment:</strong> You must deliberately shift exposure:</p>
+  <ul>
+    <li>Bright subject → Increase exposure (+1 to +2 stops)</li>
+    <li>Dark subject → Decrease exposure (-1 to -2 stops)</li>
+  </ul>
+
+  <h3><em>Step 2: The Histogram as Your Zone Map</em></h3>
+  <p>The histogram is the digital equivalent of the Zone System in real time. Your goal is not a “perfect” shape, but a controlled range:</p>
+  <ul>
+    <li><strong>Left side:</strong> Shadows (Zones 0–III)</li>
+    <li><strong>Middle:</strong> Midtones (Zone V)</li>
+    <li><strong>Right side:</strong> Highlights (Zones VII–X)</li>
+  </ul>
+
+  <h3><em>Step 3: Protect the Highlights</em></h3>
+  <p>Digital sensors differ from film; once highlights are "clipped" (Zone X), detail is gone forever. The modern adaptation is: <em>Expose for the highlights, recover the shadows.</em> Keep the right edge of the histogram from touching the wall, and allow shadows to fall darker to be lifted later in post-processing.</p>
+
+  <h3><em>Step 4: Shoot in RAW</em></h3>
+  <p>If you are serious about tonal control, RAW is not optional. RAW files retain significantly more information, allowing you to manipulate zones across the entire spectrum without degrading the image quality. JPEG, by contrast, "bakes in" the zones, limiting your creative freedom.</p>
+
+  <div class="pf-post__callout">
+    "The Zone System is not about numbers or charts. It is about the ability to pre-visualise a photograph before you ever press the shutter."
+  </div>
+
+  <p>If you apply the Zone System consistently, your images stop being accidental and start being deliberate. You move from "taking" a photo to "making" one.</p>
+
+  <div class="pf-post__cta">
+    <div class="pf-post__cta-cover">
+      <img src="https://www.peterfarrarbooks.com/images/coaching.jpg" alt="Coaching with Peter Farrar">
+    </div>
+    <div class="pf-post__cta-text">
+      <div class="pf-post__cta-label">Coaching &amp; Guidance</div>
+      <div class="pf-post__cta-title">Personalised Mentoring</div>
+      <p class="pf-post__cta-desc">Master the complexities of exposure and composition. Gain clarity and expert guidance to deliver professional results faster.</p>
+      <div class="pf-post__cta-links">
+        <a href="https://www.peterfarrarbooks.com/coaching.html" target="_blank">Work with Peter</a>
+      </div>
+    </div>
+  </div>
+</div>
+    
+     </div>
 
 </main>
 
