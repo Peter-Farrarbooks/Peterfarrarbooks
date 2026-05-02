@@ -5,15 +5,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- EDIT: description, canonical, title, og tags, JSON-LD per post -->
-<meta name="description" content="POST DESCRIPTION">
+<meta name="description" content="Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/POST-SLUG/">
-<title>Zone System Part One | Peter Farrar Books</title>
+<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html/">
+<title>The Zone System Explained – Part One: Seeing Light Like Ansel Adams | Peter Farrar Books</title>
 
-<meta property="og:title" content="POST TITLE">
-<meta property="og:description" content="POST DESCRIPTION">
-<meta property="og:image" content="POST HERO IMAGE URL">
-<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/POST-SLUG/">
+<meta property="og:title" content="The Zone System Explained – Part One: Seeing Light Like Ansel Adams">
+<meta property="og:description" content="Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.">
+<meta property="og:image" content="https://www.peterfarrarbooks.com/images/zone1.jpg">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/zone-system-part-one.html/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Peter Farrar Books">
 
@@ -22,28 +22,31 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "POST TITLE",
-  "description": "POST DESCRIPTION",
-  "image": "POST HERO IMAGE URL",
+  "headline": "The Zone System Explained – Part One: Seeing Light Like Ansel Adams",
+  "description": "Discover how Ansel Adams’ Zone System can transform your photography from recording a scene into interpreting light with intention.",
+  "image": "https://www.peterfarrarbooks.com/images/zone1.jpg",
   "author": {
     "@type": "Person",
     "name": "Peter Farrar",
-    "url": "https://www.peterfarrarbooks.com/about/"
+    "url": "https://www.peterfarrarbooks.com/about.html"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Peter Farrar Books",
-    "logo": { "@type": "ImageObject", "url": "https://www.peterfarrarbooks.com/images/og-image.jpg" }
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.peterfarrarbooks.com/images/favicon.jpg"
+    }
   },
-  "datePublished": "YYYY-MM-DD",
-  "dateModified": "YYYY-MM-DD",
+  "datePublished": "2026-04-20",
+  "dateModified": "2026-04-20",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.peterfarrarbooks.com/blog/POST-SLUG/"
+    "@id": "https://www.peterfarrarbooks.com/blog/zone-system-part-one.html"
   },
-  "inLanguage": "en-GB"
-}
-</script>
+  "inLanguage": "en-GB",
+  "keywords": "Zone System, Ansel Adams, Photography Exposure, Black and White Photography, Landscape Photography Tips"
+}</script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
 <script>
@@ -87,7 +90,125 @@
 */
 
 /* ── START: paste post <style> here ── */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;600;700&display=swap');
 
+.pf-post {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: 'EB Garamond', serif;
+  font-size: 19px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.85;
+}
+.pf-post * { box-sizing: border-box; }
+
+.pf-post__label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 4px; text-transform: uppercase; color: #b08559;
+  display: flex; align-items: center; gap: 14px; margin-bottom: 22px;
+}
+.pf-post__label::before {
+  content: ''; width: 36px; height: 1px; background: #b08559; flex-shrink: 0;
+}
+
+.pf-post h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(32px, 4.5vw, 52px); font-weight: 400;
+  color: #fff; line-height: 1.1; margin: 0 0 12px;
+}
+.pf-post h1 em { font-style: italic; color: #b08559; }
+
+.pf-post__meta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px; font-weight: 300;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.4); margin-bottom: 40px;
+}
+.pf-post__meta span { color: rgba(176,133,89,0.6); margin: 0 8px; }
+
+.pf-post__divider {
+  width: 100%; height: 1px;
+  background: linear-gradient(to right, rgba(176,133,89,0.5), rgba(176,133,89,0.1));
+  margin: 0 0 44px;
+}
+
+.pf-post__cover {
+  width: 100%; margin: 0 0 44px;
+}
+.pf-post__cover img {
+  width: 100%; height: auto; display: block;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+}
+
+.pf-post p { margin: 0 0 24px; }
+
+.pf-post h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px; font-weight: 400; color: #fff;
+  line-height: 1.2; margin: 52px 0 16px;
+  padding-bottom: 10px; border-bottom: 1px solid rgba(176,133,89,0.2);
+}
+
+/* Table Styling */
+.pf-post__table-wrapper { overflow-x: auto; margin: 2.5rem 0; }
+table { width: 100%; border-collapse: collapse; font-family: 'Montserrat', sans-serif; font-size: 14px; background: rgba(255,255,255,0.03); }
+th, td { text-align: left; padding: 15px; border-bottom: 1px solid rgba(176,133,89,0.1); }
+th { color: #b08559; text-transform: uppercase; font-size: 10px; letter-spacing: 2px; background: rgba(176,133,89,0.05); }
+
+.pf-post blockquote {
+  border-left: none; padding: 0 40px; text-align: center;
+  font-size: 24px; color: #b08559; margin: 4rem 0;
+  line-height: 1.6; font-style: italic;
+}
+
+.pf-post ul { list-style: none; padding: 0; margin: 0 0 28px; }
+.pf-post ul li {
+  padding-left: 20px; position: relative;
+  margin-bottom: 10px; color: rgba(255,255,255,0.75);
+}
+.pf-post ul li::before {
+  content: ''; position: absolute; left: 0; top: 13px;
+  width: 6px; height: 1px; background: #b08559;
+}
+
+.pf-post__callout {
+  border-left: 2px solid rgba(176,133,89,0.6);
+  margin: 48px 0; padding: 12px 0 12px 32px;
+  font-size: 22px; font-style: italic;
+  color: rgba(255,255,255,0.7); line-height: 1.6;
+}
+
+.pf-post__cta {
+  margin-top: 60px; border-top: 1px solid rgba(176,133,89,0.2);
+  padding-top: 48px; display: flex; gap: 32px; align-items: flex-start;
+}
+.pf-post__cta-cover { flex-shrink: 0; width: 100px; }
+.pf-post__cta-cover img { width: 100%; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
+.pf-post__cta-text { flex: 1; }
+.pf-post__cta-label {
+  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: #b08559; margin-bottom: 10px;
+}
+.pf-post__cta-title {
+  font-family: 'EB Garamond', serif; font-size: 22px; color: #fff; margin: 0 0 10px;
+}
+.pf-post__cta-desc {
+  font-family: 'EB Garamond', serif; font-size: 16px;
+  color: rgba(255,255,255,0.55); line-height: 1.7; margin: 0 0 20px;
+}
+.pf-post__cta-links a {
+  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; padding: 10px 20px;
+  color: #b08559; border: 1px solid rgba(176,133,89,0.4); text-decoration: none;
+  transition: 0.2s; display: inline-block;
+}
+.pf-post__cta-links a:hover { background: #b08559; color: #080806; }
+
+@media (max-width: 560px) {
+  .pf-post__cta { flex-direction: column; gap: 20px; }
+}
 
 /* ── END: post style ── */
 </style>
@@ -133,8 +254,80 @@
     The pf-post max-width: 760px centres itself inside the page.
   -->
 
-  <div class="pf-post">
-    <!-- post content here -->
+<div class="pf-post">
+  <div class="pf-post__label">Photography Techniques</div>
+
+  <h1>The Zone System Explained – Part One: Seeing Light Like Ansel Adams</h1>
+
+  <p class="pf-post__meta">Peter Farrar <span>&#183;</span> April 2026</p>
+
+  <div class="pf-post__divider"></div>
+
+  <div class="pf-post__cover">
+    <img src="https://www.peterfarrarbooks.com/images/zone1.jpg" alt="Dramatic black and white landscape demonstrating Zone System principles">
+  </div>
+
+  <p>Few names in photography carry the same weight as Ansel Adams. His black and white landscapes remain some of the most striking images ever made, not simply because of dramatic scenery, but because of how precisely he understood light. At the centre of that mastery was <strong>The Zone System</strong>.</p>
+
+  <p>If the phrase sounds technical, it is. But it is also one of the most useful ways any photographer can learn to truly <em>see</em> a scene before pressing the shutter. Today, even in the age of digital cameras and instant previews, the principles remain powerful.</p>
+
+  <h2>What Is the Zone System?</h2>
+  <p>Developed in the 1930s as a way to control exposure and tonal range, the system allows you to translate the world into intentional shades. Instead of thinking in vague terms like “bright” or “dark,” the system divides tones into 11 distinct zones.</p>
+
+  <div class="pf-post__table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Zone</th>
+          <th>Tonal Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Zone 0</strong></td><td>Pure black, no detail</td></tr>
+        <tr><td><strong>Zone I-II</strong></td><td>Very deep shadows, minimal texture</td></tr>
+        <tr><td><strong>Zone III-IV</strong></td><td>Dark textured areas (Deep shadows)</td></tr>
+        <tr><td><strong>Zone V</strong></td><td>Middle grey (18% Reflectance)</td></tr>
+        <tr><td><strong>Zone VI-VII</strong></td><td>Light textured tones (Skin tones / Sunlit stone)</td></tr>
+        <tr><td><strong>Zone VIII-IX</strong></td><td>Bright highlights with slight detail (Snow / Clouds)</td></tr>
+        <tr><td><strong>Zone X</strong></td><td>Pure white, no detail</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Why This Matters</h2>
+  <p>Most beginners expose a photo based only on what the camera meter says. That often creates acceptable results, but not intentional ones. The Zone System teaches you to ask critical questions about where shadows should fall and what mood the image should carry.</p>
+
+  <blockquote>
+    "Ansel Adams would mentally place snow in Zone VII or VIII bright and luminous, yet still detailed, rather than letting a camera meter turn it grey."
+  </blockquote>
+
+  <h2>Training Your Eye</h2>
+  <p>To make intentional exposure instinctive, you must develop your visual judgement. Next time you walk outside, ask yourself:</p>
+  <ul>
+    <li>What is the darkest tone here, and should it have detail?</li>
+    <li>Where is middle grey in this landscape?</li>
+    <li>Which areas are the highlights, and am I preserving them?</li>
+  </ul>
+
+  <div class="pf-post__callout">
+    <strong>Coming Next:</strong> In Part Two, we’ll bring the Zone System into the modern era, exploring how to use these principles with histograms and RAW files.
+  </div>
+
+  <div class="pf-post__cta">
+    <div class="pf-post__cta-cover">
+      <img src="https://www.peterfarrarbooks.com/images/photography-field-guide.jpg" alt="The Complete Photography Field Guide by Peter Farrar">
+    </div>
+    <div class="pf-post__cta-text">
+      <div class="pf-post__cta-label">Referenced in this post</div>
+      <div class="pf-post__cta-title">The Complete Photography Field Guide</div>
+      <p class="pf-post__cta-desc">Stop reacting to light and master the art of intentional photography. 538 pages of technical and creative mastery.</p>
+      <div class="pf-post__cta-links">
+        <a href="https://www.amazon.co.uk/Complete-Photography-Field-Guide-Professional/dp/B0GVRD2XFC/" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+</div>  
+  
   </div>
 
 </main>
