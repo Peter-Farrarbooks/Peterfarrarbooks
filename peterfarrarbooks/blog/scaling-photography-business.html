@@ -24,11 +24,11 @@
   "@type": "BlogPosting",
   "headline": "From $300 to $4,600: What Actually Scales a Photography Business",
   "description": "How positioning, pricing strategy, and client experience scaled a photography business from $300 to $4,600 per wedding.",
-  "image": "https://www.peterfarrarbooks.com/images/ ------------------------------",
+  "image": "https://www.peterfarrarbooks.com/images/photography-field-guide.jpg",
   "author": {
     "@type": "Person",
     "name": "Peter Farrar",
-    "url": "https://www.peterfarrarbooks.com/p/about.html"
+    "url": "https://www.peterfarrarbooks.com/about.html"
   },
   "publisher": {
     "@type": "Organization",
@@ -83,17 +83,110 @@
 .post-back::before { content: '←'; }
 .post-back:hover { color: var(--gold); }
 
-/*
-  The pf-post block below is self-contained with its own
-  Google Fonts import and colour variables (#b08559 gold).
-  It sits inside the site shell without conflict.
-  PASTE the <style> block from the original post file here:
-*/
-
 /* ── START: paste post <style> here ── */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;600;700&display=swap');
 
+.pf-post {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: 'EB Garamond', serif;
+  font-size: 19px;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.85;
+}
+.pf-post * { box-sizing: border-box; }
+.pf-post__label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 4px; text-transform: uppercase; color: #b08559;
+  display: flex; align-items: center; gap: 14px; margin-bottom: 22px;
+}
+.pf-post__label::before {
+  content: ''; width: 36px; height: 1px; background: #b08559; flex-shrink: 0;
+}
+.pf-post h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(32px, 4.5vw, 52px); font-weight: 400;
+  color: #fff; line-height: 1.1; margin: 0 0 12px;
+}
+.pf-post h1 em { font-style: italic; color: #b08559; }
+.pf-post__meta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px; font-weight: 300;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.4); margin-bottom: 40px;
+}
+.pf-post__meta span { color: rgba(176,133,89,0.6); margin: 0 8px; }
+.pf-post__divider {
+  width: 100%; height: 1px;
+  background: linear-gradient(to right, rgba(176,133,89,0.5), rgba(176,133,89,0.1));
+  margin: 0 0 44px;
+}
+.pf-post__cover {
+  float: right; width: 160px; margin: 0 0 28px 36px;
+}
+.pf-post__cover img {
+  width: 100%; height: auto; display: block;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+}
+.pf-post p { margin: 0 0 24px; }
+.pf-post h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px; font-weight: 400; color: #fff;
+  line-height: 1.2; margin: 52px 0 16px;
+  padding-bottom: 10px; border-bottom: 1px solid rgba(176,133,89,0.2);
+}
+.pf-post h2 em { font-style: italic; color: #b08559; }
+.pf-post blockquote {
+  border-left: 2px solid rgba(176,133,89,0.6);
+  margin: 36px 0; padding: 12px 0 12px 24px;
+  font-size: 22px; font-style: italic; color: rgba(255,255,255,0.7);
+}
+.pf-post ul { list-style: none; padding: 0; margin: 0 0 28px; }
+.pf-post ul li {
+  padding-left: 20px; position: relative;
+  margin-bottom: 10px; color: rgba(255,255,255,0.75);
+}
+.pf-post ul li::before {
+  content: ''; position: absolute; left: 0; top: 13px;
+  width: 6px; height: 1px; background: #b08559;
+}
+.pf-post__callout {
+  background: rgba(176,133,89,0.07);
+  border: 1px solid rgba(176,133,89,0.2);
+  padding: 30px; margin: 40px 0;
+}
+.pf-post__cta {
+  margin-top: 60px; border-top: 1px solid rgba(176,133,89,0.2);
+  padding-top: 48px; display: flex; gap: 32px; align-items: flex-start;
+}
+.pf-post__cta-cover { flex-shrink: 0; width: 100px; }
+.pf-post__cta-cover img { width: 100%; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
+.pf-post__cta-text { flex: 1; }
+.pf-post__cta-label {
+  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase; color: #b08559; margin-bottom: 10px;
+}
+.pf-post__cta-title {
+  font-family: 'EB Garamond', serif; font-size: 22px; color: #fff; margin: 0 0 10px;
+}
+.pf-post__cta-desc {
+  font-family: 'EB Garamond', serif; font-size: 16px;
+  color: rgba(255,255,255,0.55); line-height: 1.7; margin: 0 0 20px;
+}
+.pf-post__cta-links a {
+  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; padding: 10px 20px;
+  color: #b08559; border: 1px solid rgba(176,133,89,0.4); text-decoration: none;
+  transition: 0.2s; display: inline-block;
+}
+.pf-post__cta-links a:hover { background: #b08559; color: #080806; }
+@media (max-width: 560px) {
+  .pf-post__cover { float: none; width: 120px; margin: 0 auto 28px; }
+  .pf-post__cta { flex-direction: column; }
+}
 
-/* ── END: post style ── */
 </style>
 </head>
 
@@ -130,15 +223,67 @@
     <a href="/blog/" class="post-back">All Posts</a>
   </div>
 
-  <!--
-    PASTE the entire <div class="pf-post">...</div> from the
-    original post .txt file here. Do not include its <style>
-    block — that goes in the <head> above.
-    The pf-post max-width: 760px centres itself inside the page.
-  -->
+
 
   <div class="pf-post">
-    <!-- post content here -->
+
+  
+<div class="pf-post">
+  <div class="pf-post__label">Photography &amp; Business</div>
+
+  <h1>From $300 to $4,600: What Actually <em>Scales</em> a Photography Business</h1>
+
+  <p class="pf-post__meta">Peter Farrar <span>&#183;</span> April 2026</p>
+
+  <div class="pf-post__divider"></div>
+
+  <div class="pf-post__cover">
+    <img alt="The Complete Photography Field Guide by Peter Farrar" src="https://www.peterfarrarbooks.com/images/photography-field-guide.jpg"/>
+  </div>
+
+  <p>Most photography businesses don't fail because of a lack of talent. They fail because of weak positioning, poor pricing strategy, and inconsistent client experience.</p>
+
+  <p>I know this first hand. When I started my wedding and portrait photography business, I was charging around $300 per wedding. Like many beginners, I was focused on getting bookings any bookings rather than building a sustainable business structure.</p>
+
+  <p>Through focused marketing and refining the customer journey, I scaled my pricing to between $3,600 and $4,600 per wedding. This wasn't luck; it was a series of intentional shifts.</p>
+
+  <h2><em>Pricing reflects positioning, not just skill</em></h2>
+  <p>Many photographers believe pricing is directly tied to technical ability. In reality, pricing is driven by <strong>perceived value</strong>. Clients pay for confidence in an outcome, not for a specific lens kit or aperture setting.</p>
+  <ul>
+    <li>Perceived value is built through presentation, not just the final product.</li>
+    <li>Brand positioning determines which clients find you.</li>
+    <li>Market targeting controls who you are compared against.</li>
+  </ul>
+
+  <h2><em>Client experience is the true product</em></h2>
+  <blockquote>The photographers who scale fastest are not the ones with the best equipment. They are the ones with the clearest process.</blockquote>
+  <p>Clients buy reliability and a smooth professional experience. From the first inquiry to the final gallery delivery, every touchpoint is a chance to reinforce your premium price point. Consistency removes the feeling of risk from the client's decision.</p>
+
+  <div class="pf-post__callout">
+    <p><strong>Key principle:</strong> Every point of friction in the journey—delayed responses, unclear pricing, or uncertain timelines—is a reason for a client to choose someone else.</p>
+  </div>
+
+  <h2><em>Marketing is not optional</em></h2>
+  <p>Better work does not automatically bring better clients. A clearly positioned portfolio attracts the niche you want. Waiting to be "discovered" is a passive strategy; active messaging builds the familiarity needed to convert high-value leads.</p>
+
+  <h2><em>Structure over information</em></h2>
+  <p>There is no shortage of advice online, but it is often scattered and inconsistent. Scaling requires a joined-up path. This is exactly why <strong>The Complete Photography Field Guide</strong> was written: to provide a single, structured resource that takes you from technical fundamentals to a profitable business model.</p>
+
+  <div class="pf-post__cta">
+    <div class="pf-post__cta-cover">
+      <img alt="The Complete Photography Field Guide by Peter Farrar" src="https://wwww.peterfarrarbooks.com/images/photography-field-guide.jpg"/>
+    </div>
+    <div class="pf-post__cta-text">
+      <div class="pf-post__cta-label">Featured Resource</div>
+      <div class="pf-post__cta-title">The Complete Photography Field Guide</div>
+      <p class="pf-post__cta-desc">538 pages covering technique, workflow, business, and UK &amp; US photography law—everything in one book.</p>
+      <div class="pf-post__cta-links">
+        <a href="https://www.amazon.co.uk/Complete-Photography-Field-Guide-Professional/dp/B0GVRD2XFC/" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+</div>  
+  
   </div>
 
 </main>
