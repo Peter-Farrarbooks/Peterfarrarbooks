@@ -751,6 +751,8 @@ em { font-style: italic; color: var(--gold); }
   padding: 60px 0;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
+     outline: 2px solid red; /* TEMP DEBUG */
+}
 }
 .reviews-section h2 {
   font-family: var(--font-serif);
