@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
 
-    <!-- Apple touch and Favicon Icons go here -->
+  <!-- Apple touch and favicon Icons -->
   <link rel="appletouch" sizes="180x180" href="/appletouch.png">
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  
+
   <!-- =====================================================
        GOOGLE ANALYTICS VERIFICATION — one instance only
        ===================================================== -->
@@ -147,13 +145,17 @@
   <!-- =====================================================
        STYLESHEET
        ===================================================== -->
-<link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-XW133STPV9');
   </script>
+
+</head>
+<body>
 
 <header class="site-header">
   <div class="container header-inner">
@@ -178,10 +180,6 @@
   </div>
 </header>
 
-<!-- =====================================================
-     MAIN LANDMARK — FIX: added to resolve PageSpeed
-     "Document does not have a main landmark" error
-     ===================================================== -->
 <main>
 
 <section class="hero">
@@ -268,7 +266,8 @@
           </div>
           <div class="book-info">
             <span class="book-tag">Photography · Book 1</span>
-            <h2>Photography for Beginners</h2>
+            <!-- FIX: was h2, corrected to h3 — sits inside h2 section, CSS already targets .book-info h3 -->
+            <h3>Photography for Beginners</h3>
             <p>Foundations, History, and the Creative Mindset.</p>
             <a href="https://www.amazon.co.uk/dp/B0GY4ZP97S" target="_blank" rel="noopener" class="btn btn-amazon">Buy on Amazon</a>
           </div>
@@ -279,7 +278,8 @@
           </div>
           <div class="book-info">
             <span class="book-tag">Photography · Book 2</span>
-            <h2>Digital Photography Made Simple</h2>
+            <!-- FIX: was h2, corrected to h3 -->
+            <h3>Digital Photography Made Simple</h3>
             <p>Technical Mastery, Optics, and Digital Workflow.</p>
             <a href="https://www.amazon.co.uk/dp/B0GY87Z23K" target="_blank" rel="noopener" class="btn btn-amazon">Buy on Amazon</a>
           </div>
@@ -290,7 +290,8 @@
           </div>
           <div class="book-info">
             <span class="book-tag">Photography · Book 3</span>
-            <h2>Mastering Digital Photography</h2>
+            <!-- FIX: was h2, corrected to h3 -->
+            <h3>Mastering Digital Photography</h3>
             <p>Applied Disciplines, Professional Business, and Legalities.</p>
             <a href="https://www.amazon.co.uk/dp/B0GYCPGFY3" target="_blank" rel="noopener" class="btn btn-amazon">Buy on Amazon</a>
           </div>
@@ -304,7 +305,8 @@
         </div>
         <div class="book-info">
           <span class="book-tag">Photography · Business · Technique</span>
-          <h2>The Complete Photography Field Guide</h2>
+          <!-- FIX: was h2, corrected to h3 -->
+          <h3>The Complete Photography Field Guide</h3>
           <p>538 pages covering everything from camera fundamentals to building a photography business. The only guide that covers technique, workflow, business, and UK &amp; US photography law in one book.</p>
           <a href="https://www.amazon.co.uk/Complete-Photography-Field-Guide-Professional/dp/B0GVRD2XFC/" target="_blank" rel="noopener" class="btn btn-amazon">Buy on Amazon</a>
         </div>
@@ -315,7 +317,8 @@
         </div>
         <div class="book-info">
           <span class="book-tag">Leadership · Management · Culture</span>
-          <h2>Leadership – The Culture Fix</h2>
+          <!-- FIX: was h2, corrected to h3 -->
+          <h3>Leadership – The Culture Fix</h3>
           <p>The practical playbook for managing managers, fixing workplace culture, and building accountable teams. Real frameworks, real scenarios, no theory, no fluff.</p>
           <a href="https://www.amazon.co.uk/dp/B0GW266WSK" target="_blank" rel="noopener" class="btn btn-amazon">Buy on Amazon</a>
         </div>
@@ -340,7 +343,8 @@
         </div>
         <div class="blog-card-body">
           <span class="blog-tag">Leadership</span>
-          <h2><a href="/blog/good-managers-vs-bad-managers/">Good Managers vs Bad Managers – The Behaviours That Shape Every Workplace (Part Two)</a></h2>
+          <!-- FIX: was h2, corrected to h3 — CSS already targets .blog-card-body h3 -->
+          <h3><a href="/blog/good-managers-vs-bad-managers/">Good Managers vs Bad Managers – The Behaviours That Shape Every Workplace (Part Two)</a></h3>
         </div>
       </article>
       <article class="blog-card">
@@ -349,7 +353,8 @@
         </div>
         <div class="blog-card-body">
           <span class="blog-tag">Photography</span>
-          <h2><a href="/blog/zone-system-part-two/">The Zone System Explained – Part Two: Applying It in Modern Digital Photography</a></h2>
+          <!-- FIX: was h2, corrected to h3 -->
+          <h3><a href="/blog/zone-system-part-two/">The Zone System Explained – Part Two: Applying It in Modern Digital Photography</a></h3>
         </div>
       </article>
     </div>
@@ -378,13 +383,6 @@
       <span class="logo-sub">Books</span>
       <p>Author · Photographer · Leadership Expert</p>
     </div>
-
-    <!-- =====================================================
-         FOOTER HEADINGS — FIX: changed from <h4> to <p class="footer-heading">
-         Reason: <h4> with no h2/h3 parent caused
-         "headings not in sequential order" PageSpeed error
-         Visually identical — styled via .footer-heading in CSS
-         ===================================================== -->
     <div class="footer-nav">
       <p class="footer-heading">Pages</p>
       <ul>
@@ -424,6 +422,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
