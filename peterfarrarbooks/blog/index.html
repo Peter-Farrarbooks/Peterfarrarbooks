@@ -1,239 +1,242 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <!-- Apple touch and favicon Icons go here -->
-<link rel="appletouch" sizes="180x180" href="/appletouch.png">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Photography insights, leadership thinking, and updates from Peter Farrar — author, photographer, and leadership expert.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.peterfarrarbooks.com/blog" />
-<title>Blog | Peter Farrar Books</title>
+  <!-- Apple touch and favicon Icons -->
+  <link rel="appletouch" sizes="180x180" href="/appletouch.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
 
-<meta property="og:title" content="Blog | Peter Farrar Books">
-<meta property="og:description" content="Photography insights, leadership thinking, and updates from Peter Farrar.">
-<meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
-<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Peter Farrar Books"><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://www.peterfarrarbooks.com/#website",
-      "url": "https://www.peterfarrarbooks.com/",
-      "name": "Peter Farrar Books",
-      "description": "Leadership and photography books by Peter Farrar",
-      "publisher": { "@id": "https://www.peterfarrarbooks.com/#person" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.peterfarrarbooks.com/#person",
-      "name": "Peter Farrar",
-      "url": "https://www.peterfarrarbooks.com/about",
-      "jobTitle": "Author, Photographer and Leadership Expert",
-      "description": "Author of leadership and photography books with 30+ years experience",
-      "sameAs": [
-        "https://www.linkedin.com/in/pfarrar/",
-        "https://www.instagram.com/kennethlightstudios/",
-        "https://www.facebook.com/KennethLightStudios/",
-        "https://x.com/Kennethstudios/"
-      ]
-    }
-  ]
-}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photography techniques and leadership insights from Peter Farrar — author of The Complete Photography Field Guide and Leadership: The Culture Fix.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.peterfarrarbooks.com/blog/" />
+  <title>Photography &amp; Leadership Blog | Peter Farrar Books</title>
 
-  
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XW133STPV9');
-</script>
+  <meta property="og:title" content="Photography &amp; Leadership Blog | Peter Farrar Books">
+  <meta property="og:description" content="Photography techniques and leadership insights from Peter Farrar — author of The Complete Photography Field Guide and Leadership: The Culture Fix.">
+  <meta property="og:image" content="https://www.peterfarrarbooks.com/images/og-image.jpg">
+  <meta property="og:url" content="https://www.peterfarrarbooks.com/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Peter Farrar Books">
 
-<link rel="stylesheet" href="/css/styles.css">
-
-<style>
-/* ── Blog Index — extends styles.css ── */
-
-.blog-filters {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 28px;
-}
-.filter-btn {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 7px 18px;
-  background: transparent;
-  border: 1px solid var(--border-mid);
-  color: var(--text-dim);
-  cursor: pointer;
-  border-radius: var(--radius);
-  transition: all var(--transition);
-}
-.filter-btn:hover,
-.filter-btn.active {
-  border-color: var(--gold);
-  color: var(--gold);
-  background: rgba(196,149,61,0.06);
-}
-
-/* Featured post */
-.post-featured {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: var(--bg-card);
-  box-shadow: var(--shadow);
-  margin-bottom: 12px;
-  transition: box-shadow var(--transition), border-color var(--transition);
-}
-.post-featured:hover {
-  box-shadow: var(--shadow-lg);
-  border-color: var(--gold-dim);
-}
-.post-featured__img {
-  aspect-ratio: 4/3;
-  overflow: hidden;
-}
-.post-featured__img img {
-  width: 100%; height: 100%;
-  object-fit: cover; display: block;
-  transition: transform 0.4s ease;
-}
-.post-featured:hover .post-featured__img img { transform: scale(1.03); }
-.post-featured__body {
-  padding: 44px 40px;
-  display: flex; flex-direction: column; justify-content: center;
-  border-left: 1px solid var(--border);
-}
-
-/* Shared */
-.post-tag {
-  font-family: var(--font-sans);
-  font-size: 0.7rem; font-weight: 700;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 10px; display: block;
-}
-.post-meta {
-  font-family: var(--font-sans);
-  font-size: 0.72rem; font-weight: 300;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--text-dim); margin-bottom: 14px; display: block;
-}
-.post-title {
-  font-family: var(--font-serif);
-  font-weight: normal; color: var(--text);
-  line-height: 1.25; margin: 0 0 14px;
-}
-.post-title a { color: inherit; text-decoration: none; transition: color var(--transition); }
-.post-title a:hover { color: var(--gold); }
-.post-featured__body .post-title { font-size: clamp(1.1rem, 1.8vw, 1.45rem); }
-.post-excerpt {
-  font-family: var(--font-serif);
-  font-size: 0.95rem; color: var(--text-muted);
-  line-height: 1.75; margin: 0 0 24px;
-}
-.post-readmore {
-  font-family: var(--font-sans);
-  font-size: 0.72rem; font-weight: 700;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--gold); text-decoration: none;
-  display: inline-flex; align-items: center; gap: 6px;
-  transition: gap var(--transition); margin-top: auto;
-}
-.post-readmore::after { content: '→'; }
-.post-readmore:hover { color: var(--gold-light); gap: 10px; }
-
-/* Divider */
-.blog-divider {
-  display: flex; align-items: center; gap: 20px;
-  margin: 36px 0;
-}
-.blog-divider::before,
-.blog-divider::after {
-  content: ''; flex: 1; height: 1px; background: var(--border);
-}
-.blog-divider span {
-  font-family: var(--font-sans);
-  font-size: 0.68rem; font-weight: 700;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--text-dim); white-space: nowrap;
-}
-
-/* Grid */
-.post-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.post-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: var(--bg-card);
-  box-shadow: var(--shadow);
-  display: flex; flex-direction: column;
-  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
-}
-.post-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-3px);
-  border-color: var(--gold-dim);
-}
-.post-card__img {
-  aspect-ratio: 16/9; overflow: hidden; flex-shrink: 0;
-}
-.post-card__img img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-  transition: transform 0.4s ease;
-}
-.post-card:hover .post-card__img img { transform: scale(1.04); }
-.post-card__body {
-  padding: 22px 22px 26px;
-  display: flex; flex-direction: column; flex: 1;
-}
-.post-card__body .post-title { font-size: 1rem; flex: 1; margin-bottom: 16px; }
-.post-card__body .post-excerpt {
-  font-size: 0.88rem; margin-bottom: 18px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-@media (max-width: 900px) {
-  .post-featured { grid-template-columns: 1fr; }
-  .post-featured__img { aspect-ratio: 16/9; }
-  .post-featured__body {
-    border-left: none;
-    border-top: 1px solid var(--border);
-    padding: 28px;
+  <!-- =====================================================
+       SCHEMA — WEBSITE + PERSON
+       ===================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.peterfarrarbooks.com/#website",
+        "url": "https://www.peterfarrarbooks.com/",
+        "name": "Peter Farrar Books",
+        "description": "Leadership and photography books by Peter Farrar",
+        "publisher": { "@id": "https://www.peterfarrarbooks.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.peterfarrarbooks.com/#person",
+        "name": "Peter Farrar",
+        "url": "https://www.peterfarrarbooks.com/about",
+        "jobTitle": "Author, Photographer and Leadership Expert",
+        "description": "Author of leadership and photography books with 30+ years experience",
+        "sameAs": [
+          "https://www.linkedin.com/in/pfarrar/",
+          "https://www.instagram.com/kennethlightstudios/",
+          "https://www.facebook.com/KennethLightStudios/",
+          "https://x.com/Kennethstudios/"
+        ]
+      }
+    ]
   }
-  .post-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 600px) {
-  .post-grid { grid-template-columns: 1fr; }
-}
-</style>
-</head>
+  </script>
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XW133STPV9');
+  </script>
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+  /* ── Blog Index — extends styles.css ── */
+
+  .blog-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+  .filter-btn {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 7px 18px;
+    background: transparent;
+    border: 1px solid var(--border-mid);
+    color: var(--text-muted);  /* FIX: was --text-dim, lifted for contrast */
+    cursor: pointer;
+    border-radius: var(--radius);
+    transition: all var(--transition);
+  }
+  .filter-btn:hover,
+  .filter-btn.active {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: rgba(196,149,61,0.06);
+  }
+
+  /* Featured post */
+  .post-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg-card);
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+    transition: box-shadow var(--transition), border-color var(--transition);
+  }
+  .post-featured:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--gold-dim);
+  }
+  .post-featured__img {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+  }
+  .post-featured__img img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+    transition: transform 0.4s ease;
+  }
+  .post-featured:hover .post-featured__img img { transform: scale(1.03); }
+  .post-featured__body {
+    padding: 44px 40px;
+    display: flex; flex-direction: column; justify-content: center;
+    border-left: 1px solid var(--border);
+  }
+
+  /* Shared */
+  .post-tag {
+    font-family: var(--font-sans);
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 10px; display: block;
+  }
+  .post-meta {
+    font-family: var(--font-sans);
+    font-size: 0.72rem; font-weight: 300;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted);  /* FIX: was --text-dim, lifted for contrast */
+    margin-bottom: 14px; display: block;
+  }
+  .post-title {
+    font-family: var(--font-serif);
+    font-weight: normal; color: var(--text);
+    line-height: 1.25; margin: 0 0 14px;
+  }
+  .post-title a { color: inherit; text-decoration: none; transition: color var(--transition); }
+  .post-title a:hover { color: var(--gold); }
+  .post-featured__body .post-title { font-size: clamp(1.1rem, 1.8vw, 1.45rem); }
+  .post-excerpt {
+    font-family: var(--font-serif);
+    font-size: 0.95rem; color: var(--text-muted);
+    line-height: 1.75; margin: 0 0 24px;
+  }
+  .post-readmore {
+    font-family: var(--font-sans);
+    font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--gold); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: gap var(--transition); margin-top: auto;
+  }
+  .post-readmore::after { content: '→'; }
+  .post-readmore:hover { color: var(--gold-light); gap: 10px; }
+
+  /* Divider */
+  .blog-divider {
+    display: flex; align-items: center; gap: 20px;
+    margin: 36px 0;
+  }
+  .blog-divider::before,
+  .blog-divider::after {
+    content: ''; flex: 1; height: 1px; background: var(--border);
+  }
+  .blog-divider span {
+    font-family: var(--font-sans);
+    font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--text-muted);  /* FIX: was --text-dim, lifted for contrast */
+    white-space: nowrap;
+  }
+
+  /* Grid */
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .post-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg-card);
+    box-shadow: var(--shadow);
+    display: flex; flex-direction: column;
+    transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+  }
+  .post-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+    border-color: var(--gold-dim);
+  }
+  .post-card__img {
+    aspect-ratio: 16/9; overflow: hidden; flex-shrink: 0;
+  }
+  .post-card__img img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.4s ease;
+  }
+  .post-card:hover .post-card__img img { transform: scale(1.04); }
+  .post-card__body {
+    padding: 22px 22px 26px;
+    display: flex; flex-direction: column; flex: 1;
+  }
+  .post-card__body .post-title { font-size: 1rem; flex: 1; margin-bottom: 16px; }
+  .post-card__body .post-excerpt {
+    font-size: 0.88rem; margin-bottom: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media (max-width: 900px) {
+    .post-featured { grid-template-columns: 1fr; }
+    .post-featured__img { aspect-ratio: 16/9; }
+    .post-featured__body {
+      border-left: none;
+      border-top: 1px solid var(--border);
+      padding: 28px;
+    }
+    .post-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .post-grid { grid-template-columns: 1fr; }
+  }
+  </style>
+
+</head>
 <body>
 
 <header class="site-header">
@@ -245,7 +248,7 @@
       </a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main navigation">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/books">Books</a></li>
@@ -277,6 +280,7 @@
   <section class="blog-section">
     <div class="container">
 
+      <!-- Featured post — h2 is correct here as it is the lead article -->
       <article class="post-featured" data-category="leadership">
         <div class="post-featured__img">
           <img src="https://www.peterfarrarbooks.com/images/managers2.jpg" alt="Good Managers vs Bad Managers" loading="eager">
@@ -385,7 +389,8 @@
       <p>Author · Photographer · Leadership Expert</p>
     </div>
     <div class="footer-nav">
-      <h4>Pages</h4>
+      <!-- FIX: was h4, changed to p.footer-heading to fix heading order error -->
+      <p class="footer-heading">Pages</p>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/books">Published Books</a></li>
@@ -398,7 +403,7 @@
       </ul>
     </div>
     <div class="footer-nav">
-      <h4>Books</h4>
+      <p class="footer-heading">Books</p>
       <ul>
         <li><a href="/books#series">Photography Series</a></li>
         <li><a href="/books#field-guide">Complete Field Guide</a></li>
@@ -407,7 +412,7 @@
       </ul>
     </div>
     <div class="footer-social">
-      <h4>Connect</h4>
+      <p class="footer-heading">Connect</p>
       <ul>
         <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
         <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
