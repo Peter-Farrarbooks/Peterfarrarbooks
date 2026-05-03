@@ -1,132 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Apple touch and favicon Icons go here -->
-<link rel="appletouch" sizes="180x180" href="/appletouch.png">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- EDIT: description, canonical, title, og tags, JSON-LD per post -->
-<meta name="description" content="POST DESCRIPTION">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/POST-SLUG" />
-<title>POST TITLE | Peter Farrar Books</title>
 
-<meta property="og:title" content="POST TITLE">
-<meta property="og:description" content="POST DESCRIPTION">
-<meta property="og:image" content="POST HERO IMAGE URL">
-<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/POST-SLUG/">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="Peter Farrar Books">
+  <!-- Apple touch and favicon Icons -->
+  <link rel="appletouch" sizes="180x180" href="/appletouch.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
 
-<!-- PASTE full JSON-LD from original post file here -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "POST TITLE",<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://www.peterfarrarbooks.com/#website",
-      "url": "https://www.peterfarrarbooks.com/",
-      "name": "Peter Farrar Books",
-      "description": "Leadership and photography books by Peter Farrar",
-      "publisher": { "@id": "https://www.peterfarrarbooks.com/#person" }
-    },
-    {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+  <!-- =====================================================
+       EDIT THESE FOR EVERY POST
+       ===================================================== -->
+  <title>POST TITLE | Peter Farrar Books</title>
+  <meta name="description" content="POST DESCRIPTION">
+  <link rel="canonical" href="https://www.peterfarrarbooks.com/blog/POST-SLUG/" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="POST TITLE">
+  <meta property="og:description" content="POST DESCRIPTION">
+  <meta property="og:image" content="POST HERO IMAGE URL">
+  <meta property="og:url" content="https://www.peterfarrarbooks.com/blog/POST-SLUG/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Peter Farrar Books">
+
+  <!-- =====================================================
+       SCHEMA 1 — WEBSITE + PERSON (same on every post)
+       ===================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.peterfarrarbooks.com/#website",
+        "url": "https://www.peterfarrarbooks.com/",
+        "name": "Peter Farrar Books",
+        "description": "Leadership and photography books by Peter Farrar",
+        "publisher": { "@id": "https://www.peterfarrarbooks.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.peterfarrarbooks.com/#person",
+        "name": "Peter Farrar",
+        "url": "https://www.peterfarrarbooks.com/about",
+        "jobTitle": "Author, Photographer and Leadership Expert",
+        "description": "Author of leadership and photography books with 30+ years experience",
+        "sameAs": [
+          "https://www.linkedin.com/in/pfarrar/",
+          "https://www.instagram.com/kennethlightstudios/",
+          "https://www.facebook.com/KennethLightStudios/",
+          "https://x.com/Kennethstudios/"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- =====================================================
+       SCHEMA 2 — BLOG POST (edit for every post)
+       ===================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "POST TITLE",
+    "description": "POST DESCRIPTION",
+    "image": "POST HERO IMAGE URL",
+    "author": {
       "@type": "Person",
-      "@id": "https://www.peterfarrarbooks.com/#person",
       "name": "Peter Farrar",
-      "url": "https://www.peterfarrarbooks.com/about",
-      "jobTitle": "Author, Photographer and Leadership Expert",
-      "description": "Author of leadership and photography books with 30+ years experience",
-      "sameAs": [
-        "https://www.linkedin.com/in/pfarrar/",
-        "https://www.instagram.com/kennethlightstudios/",
-        "https://www.facebook.com/KennethLightStudios/",
-        "https://x.com/Kennethstudios/"
-      ]
-    }
-  ]
-}
-</script>
-  "description": "POST DESCRIPTION",
-  "image": "POST HERO IMAGE URL",
-  "author": {
-    "@type": "Person",
-    "name": "Peter Farrar",
-    "url": "https://www.peterfarrarbooks.com/about/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Peter Farrar Books",
-    "logo": { "@type": "ImageObject", "url": "https://www.peterfarrarbooks.com/images/og-image.jpg" }
-  },
-  "datePublished": "YYYY-MM-DD",
-  "dateModified": "YYYY-MM-DD",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.peterfarrarbooks.com/blog/POST-SLUG/"
-  },
-  "inLanguage": "en-GB"
-}
-</script>
+      "url": "https://www.peterfarrarbooks.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Peter Farrar Books",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.peterfarrarbooks.com/images/og-image.jpg"
+      }
+    },
+    "datePublished": "YYYY-MM-DD",
+    "dateModified": "YYYY-MM-DD",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.peterfarrarbooks.com/blog/POST-SLUG/"
+    },
+    "inLanguage": "en-GB"
+  }
+  </script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XW133STPV9');
-</script>
+  <!-- =====================================================
+       GOOGLE ANALYTICS
+       ===================================================== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XW133STPV9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XW133STPV9');
+  </script>
 
-<link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
 
-<style>
-/* Breadcrumb & back nav — uses site vars */
-.post-breadcrumb {
-  padding: 24px 0 0;
-  font-family: var(--font-sans);
-  font-size: 0.72rem; font-weight: 300;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--text-dim);
-}
-.post-breadcrumb a { color: var(--gold); text-decoration: none; }
-.post-breadcrumb a:hover { color: var(--gold-light); }
-.post-breadcrumb span { margin: 0 6px; color: var(--text-dim); }
+  <style>
+  /* Breadcrumb & back nav */
+  .post-breadcrumb {
+    padding: 24px 0 0;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .post-breadcrumb a { color: var(--gold); text-decoration: none; }
+  .post-breadcrumb a:hover { color: var(--gold-light); }
+  .post-breadcrumb span { margin: 0 6px; color: var(--text-muted); }
 
-.post-back {
-  display: inline-flex; align-items: center; gap: 7px;
-  font-family: var(--font-sans);
-  font-size: 0.7rem; font-weight: 700;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--text-dim); text-decoration: none;
-  padding: 16px 0 0; transition: color var(--transition);
-}
-.post-back::before { content: '←'; }
-.post-back:hover { color: var(--gold); }
+  .post-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 16px 0 0;
+    transition: color var(--transition);
+  }
+  .post-back::before { content: '←'; }
+  .post-back:hover { color: var(--gold); }
 
-/*
-  The pf-post block below is self-contained with its own
-  Google Fonts import and colour variables (#b08559 gold).
-  It sits inside the site shell without conflict.
-  PASTE the <style> block from the original post file here:
-*/
-
-/* ── START: paste post <style> here ── */
+  /* ── START: paste post <style> here ── */
 
 
-/* ── END: post style ── */
-</style>
+  /* ── END: post style ── */
+  </style>
+
 </head>
-
 <body>
 
 <header class="site-header">
@@ -138,7 +154,7 @@
       </a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main navigation">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/books">Books</a></li>
@@ -162,11 +178,9 @@
 
   <!--
     PASTE the entire <div class="pf-post">...</div> from the
-    original post .txt file here. Do not include its <style>
+    original post file here. Do not include its <style>
     block — that goes in the <head> above.
-    The pf-post max-width: 760px centres itself inside the page.
   -->
-
   <div class="pf-post">
     <!-- post content here -->
   </div>
