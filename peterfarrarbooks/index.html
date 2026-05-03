@@ -26,7 +26,6 @@
 
   <!-- =====================================================
        CANONICAL — must match exact URL of this page
-       FIXED: was /index, corrected to /
        ===================================================== -->
   <link rel="canonical" href="https://www.peterfarrarbooks.com/" />
 
@@ -50,7 +49,6 @@
 
   <!-- =====================================================
        SCHEMA — WEBSITE + PERSON
-       Tells Google who you are and what the site is about
        ===================================================== -->
   <script type="application/ld+json">
   {
@@ -85,7 +83,6 @@
 
   <!-- =====================================================
        SCHEMA — ALL 5 BOOKS
-       Tells Google about each published book
        ===================================================== -->
   <script type="application/ld+json">
   {
@@ -147,20 +144,14 @@
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
+<body>
 
-  <!-- =====================================================
-       GOOGLE ANALYTICS SCRIPT — stays just inside <body>
-       NOTE: verification meta tag REMOVED from here
-       (it was duplicated — only needed once in <head>)
-       ===================================================== -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-XW133STPV9');
   </script>
-
-  <body>
 
 <header class="site-header">
   <div class="container header-inner">
@@ -171,7 +162,7 @@
       </a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main navigation">
       <ul>
         <li><a href="/" class="active">Home</a></li>
         <li><a href="/books">Books</a></li>
@@ -185,16 +176,21 @@
   </div>
 </header>
 
+<!-- =====================================================
+     MAIN LANDMARK — FIX: added to resolve PageSpeed
+     "Document does not have a main landmark" error
+     ===================================================== -->
+<main>
+
 <section class="hero">
   <div class="container hero-inner">
     <div class="hero-text">
       <p class="hero-eyebrow">Author · Photographer · Leadership Expert</p>
       <h1>Leadership and Photography Books</h1>
       <p class="hero-lead">Leadership and photography books by Peter Farrar — practical guides to management, workplace culture, and professional photography based on 30+ years of real-world experience.</p>
-
-<p class="hero-links">
-  Explore the <a href="/books">full collection of leadership and photography books</a>.
-</p>  
+      <p class="hero-links">
+        Explore the <a href="/books">full collection of leadership and photography books</a>.
+      </p>
       <div class="hero-actions">
         <a href="/books" class="btn btn-primary">View All Books</a>
         <a href="/about" class="btn btn-secondary">About Peter</a>
@@ -206,7 +202,7 @@
   </div>
 </section>
 
-<section class="credentials">
+<section class="credentials" aria-label="Credentials">
   <div class="container credentials-inner">
     <div class="cred-item">
       <span class="cred-num">30+</span>
@@ -279,7 +275,7 @@
           <div class="book-cover">
             <img src="https://www.peterfarrarbooks.com/images/book2.jpg" alt="Digital Photography Made Simple by Peter Farrar" width="300" height="400">
           </div>
-          <div class="/book-info">
+          <div class="book-info">
             <span class="book-tag">Photography · Book 2</span>
             <h3>Digital Photography Made Simple</h3>
             <p>Technical Mastery, Optics, and Digital Workflow.</p>
@@ -371,6 +367,8 @@
   </div>
 </section>
 
+</main>
+
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
@@ -378,8 +376,15 @@
       <span class="logo-sub">Books</span>
       <p>Author · Photographer · Leadership Expert</p>
     </div>
+
+    <!-- =====================================================
+         FOOTER HEADINGS — FIX: changed from <h4> to <p class="footer-heading">
+         Reason: <h4> with no h2/h3 parent caused
+         "headings not in sequential order" PageSpeed error
+         Visually identical — styled via .footer-heading in CSS
+         ===================================================== -->
     <div class="footer-nav">
-      <h4>Pages</h4>
+      <p class="footer-heading">Pages</p>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/books">Published Books</a></li>
@@ -392,7 +397,7 @@
       </ul>
     </div>
     <div class="footer-nav">
-      <h4>Books</h4>
+      <p class="footer-heading">Books</p>
       <ul>
         <li><a href="/books#series">Photography Series</a></li>
         <li><a href="/books#field-guide">Complete Field Guide</a></li>
@@ -401,7 +406,7 @@
       </ul>
     </div>
     <div class="footer-social">
-      <h4>Connect</h4>
+      <p class="footer-heading">Connect</p>
       <ul>
         <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
         <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
