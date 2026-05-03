@@ -566,8 +566,8 @@ em { font-style: italic; color: var(--gold); }
   color: var(--text-muted);  /* FIXED: was --text-dim, lifted for contrast */
   line-height: 1.6;
 }
-.footer-nav h4,
-.footer-social h4 {
+/* RENAMED: was h4, now .footer-heading to fix heading order PageSpeed error */
+.footer-heading {
   font-family: var(--font-sans);
   font-size: 0.72rem;
   text-transform: uppercase;
