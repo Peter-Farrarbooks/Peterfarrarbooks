@@ -1173,5 +1173,6 @@ em { font-style: italic; color: var(--gold); }
 }
 
 #cusdis_thread iframe {
-  max-height: 300px;
+  width: 100%;
+  min-height: 400px;
 }
