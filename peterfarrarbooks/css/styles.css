@@ -530,6 +530,15 @@ em { font-style: italic; color: var(--gold); }
 }
 .coaching-cta-text p { color: var(--text-muted); font-size: 1rem; }
 
+
+/* ============================================
+   CSS for cusdis commments
+   ============================================ */
+#cusdis_thread {
+  min-height: 200px;
+  padding: 20px 0;
+}
+
 /* ============================================
    FOOTER
    ============================================ */
