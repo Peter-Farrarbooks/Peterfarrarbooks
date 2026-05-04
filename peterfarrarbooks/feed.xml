@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Peter Farrar Books — Blog</title>
+    <link>https://www.peterfarrarbooks.com/blog/</link>
+    <description>Photography insights, leadership thinking, and updates on new books and projects.</description>
+    <language>en-gb</language>
+    <atom:link href="https://www.peterfarrarbooks.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Good Managers vs Bad Managers – The Behaviours That Shape Every Workplace</title>
+      <link>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers/</link>
+      <guid>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers/</guid>
+      <pubDate>Mon, 04 May 2026 09:00:00 +0000</pubDate>
+      <description>Managers have a disproportionate influence over motivation, trust, performance, and retention. It is not job titles or corporate slogans that shape culture — it is the small behaviours repeated every day.</description>
+      <category>Leadership &amp; Culture</category>
+    </item>
+
+    <item>
+      <title>From Top Performer to Top Leader – Why Great Employees Often Struggle as Managers</title>
+      <link>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader/</link>
+      <guid>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader/</guid>
+      <pubDate>Sun, 20 Apr 2026 09:00:00 +0000</pubDate>
+      <description>Excellent individual contributors do not automatically become effective leaders. Management requires a complete shift in identity.</description>
+      <category>Leadership &amp; Culture</category>
+    </item>
+
+    <item>
+      <title>ITIL 4 in Practice: What Companies Expect vs Real Service Management Leadership</title>
+      <link>https://www.peterfarrarbooks.com/blog/itil-4-in-practice/</link>
+      <guid>https://www.peterfarrarbooks.com/blog/itil-4-in-practice/</guid>
+      <pubDate>Sat, 19 Apr 2026 09:00:00 +0000</pubDate>
+      <description>Service management is far more dependent on leadership, culture, and execution than any framework alone. This gap is where most service desks succeed or fail.</description>
+      <category>Leadership &amp; Culture</category>
+    </item>
+
+    <item>
+      <title>The Zone System Explained – Part Two: Applying It in Modern Digital Photography</title>
+      <link>https://www.peterfarrarbooks.com/blog/zone-system-part-two/</link>
+      <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-two/</guid>
+      <pubDate>Fri, 18 Apr 2026 09:00:00 +0000</pubDate>
+      <description>The tools have changed, but the thinking has not. How to apply the Zone System with histograms and RAW files in the digital era.</description>
+      <category>Photography</category>
+    </item>
+
+    <item>
+      <title>The Zone System Explained – Part One: Seeing Light Like Ansel Adams</title>
+      <link>https://www.peterfarrarbooks.com/blog/zone-system-part-one/</link>
+      <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-one/</guid>
+      <pubDate>Thu, 17 Apr 2026 09:00:00 +0000</pubDate>
+      <description>At the centre of Ansel Adams' mastery was the Zone System — one of the most useful ways any photographer can learn to truly see a scene.</description>
+      <category>Photography</category>
+    </item>
+
+    <item>
+      <title>From $300 to $4,600: What Actually Scales a Photography Business</title>
+      <link>https://www.peterfarrarbooks.com/blog/scaling-photography-business/</link>
+      <guid>https://www.peterfarrarbooks.com/blog/scaling-photography-business/</guid>
+      <pubDate>Wed, 16 Apr 2026 09:00:00 +0000</pubDate>
+      <description>Most photography businesses don't fail because of a lack of talent. They fail because of weak positioning, poor pricing strategy, and inconsistent client experience.</description>
+      <category>Photography &amp; Business</category>
+    </item>
+
+  </channel>
+</rss>
