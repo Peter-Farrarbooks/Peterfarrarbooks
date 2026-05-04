@@ -8,7 +8,6 @@
   
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- EDIT: description, canonical, title, og tags, JSON-LD per post -->
 <meta name="description" content="Why do excellent individual contributors often struggle when promoted? Explore the mindset shift required to move from 'doing' to 'enabling'.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader" />
@@ -50,7 +49,6 @@
 }
 </script>
 
-<!-- PASTE full JSON-LD from original post file here -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -94,7 +92,9 @@
 <link rel="stylesheet" href="/css/styles.css">
 
 <style>
-/* Breadcrumb & back nav — uses site vars */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* Breadcrumb & back nav */
 .post-breadcrumb {
   padding: 24px 0 0;
   font-family: var(--font-sans);
@@ -117,9 +117,7 @@
 .post-back::before { content: '←'; }
 .post-back:hover { color: var(--gold); }
 
-
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;600;700&display=swap');
-
+/* Post layout */
 .pf-post {
   max-width: 760px;
   margin: 0 auto;
@@ -162,9 +160,7 @@
   margin: 0 0 44px;
 }
 
-.pf-post__cover {
-  width: 100%; margin: 0 0 44px;
-}
+.pf-post__cover { width: 100%; margin: 0 0 44px; }
 .pf-post__cover img {
   width: 100%; height: auto; display: block;
   filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
@@ -229,7 +225,18 @@
   .pf-post__cta { flex-direction: column; gap: 20px; }
 }
 
-/* ── END: post style ── */
+/* Cusdis comments */
+.comments-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  overflow: hidden;
+}
+#cusdis_thread iframe {
+  transform-origin: top left;
+  transform: scale(0.85);
+  width: 117% !important;
+}
 </style>
 </head>
 
@@ -259,6 +266,7 @@
 </header>
 
 <main>
+
   <div class="container">
     <nav class="post-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>From Top Performer To Top Leader
@@ -266,104 +274,91 @@
     <a href="/blog/" class="post-back">All Posts</a>
   </div>
 
- 
-<div class="pf-post">
-  <div class="pf-post__label">Leadership &amp; Culture</div>
+  <div class="pf-post">
+    <div class="pf-post__label">Leadership &amp; Culture</div>
 
-  <h1>From Top Performer to Top Leader – <em>Why Great Employees Often Struggle as Managers</em></h1>
+    <h1>From Top Performer to Top Leader – <em>Why Great Employees Often Struggle as Managers</em></h1>
 
-  <p class="pf-post__meta">Peter Farrar <span>&#183;</span> April 2026</p>
+    <p class="pf-post__meta">Peter Farrar <span>&#183;</span> April 2026</p>
 
-  <div class="pf-post__divider"></div>
+    <div class="pf-post__divider"></div>
 
-  <div class="pf-post__cover">
-    <img src="https://www.peterfarrarbooks.com/images/managers1.jpg" alt="Conceptual image representing the transition from individual contributor to team leader">
-  </div>
+    <div class="pf-post__cover">
+      <img src="https://www.peterfarrarbooks.com/images/managers1.jpg" alt="Conceptual image representing the transition from individual contributor to team leader">
+    </div>
 
-  <p>Promoting strong performers into management roles seems logical. They know the job, understand the standards, and have already proven themselves. Yet, many organisations discover a common problem soon after promotion: excellent individual contributors do not automatically become effective leaders.</p>
+    <p>Promoting strong performers into management roles seems logical. They know the job, understand the standards, and have already proven themselves. Yet, many organisations discover a common problem soon after promotion: excellent individual contributors do not automatically become effective leaders.</p>
 
-  <p>This happens because management requires a complete <strong>shift in identity</strong>.</p>
+    <p>This happens because management requires a complete <strong>shift in identity</strong>.</p>
 
-  <h2><em>The Hardest Transition: Doing vs Enabling</em></h2>
-  <p>High performers are often rewarded because they solve problems quickly, deliver consistently, and take ownership. Their success comes from personal output. Leadership works differently.</p>
-  
-  <p>A manager’s value is no longer measured by what they personally complete. It is measured by what the team achieves collectively. That requires coaching, delegation, communication, and trust.</p>
+    <h2><em>The Hardest Transition: Doing vs Enabling</em></h2>
+    <p>High performers are often rewarded because they solve problems quickly, deliver consistently, and take ownership. Their success comes from personal output. Leadership works differently.</p>
 
-  <p>Many new managers fall into the trap of becoming the “super-doer,” stepping in to fix every issue, rewriting work, and making every decision. While this can look productive in the short term, it creates dependency and limits team growth.</p>
+    <p>A manager's value is no longer measured by what they personally complete. It is measured by what the team achieves collectively. That requires coaching, delegation, communication, and trust.</p>
 
-  <h2><em>Why Identity Matters</em></hh2>
-  <p>When managers continue operating like top individual performers, the ripple effect is damaging:</p>
-  <ul>
-    <li><strong>Team confidence drops</strong> as autonomy is removed.</li>
-    <li><strong>Decision-making slows</strong> through centralisation.</li>
-    <li><strong>Burnout increases</strong> for the manager trying to do it all.</li>
-    <li><strong>Growth stalls</strong> as the team stops learning to solve their own problems.</li>
-  </ul>
+    <p>Many new managers fall into the trap of becoming the "super-doer," stepping in to fix every issue, rewriting work, and making every decision. While this can look productive in the short term, it creates dependency and limits team growth.</p>
 
-  <div class="pf-post__callout">
-    "The best managers often become less visible operationally because their teams run smoothly without constant intervention."
-  </div>
+    <h2><em>Why Identity Matters</em></h2>
+    <p>When managers continue operating like top individual performers, the ripple effect is damaging:</p>
+    <ul>
+      <li><strong>Team confidence drops</strong> as autonomy is removed.</li>
+      <li><strong>Decision-making slows</strong> through centralisation.</li>
+      <li><strong>Burnout increases</strong> for the manager trying to do it all.</li>
+      <li><strong>Growth stalls</strong> as the team stops learning to solve their own problems.</li>
+    </ul>
 
-  <h2><em>What Good Leadership Looks Like</em></h2>
-  <p>Effective managers shift focus toward multiplier behaviours:</p>
-  <ul>
-    <li><strong>Setting direction</strong> – Making priorities clear so the team can move autonomously.</li>
-    <li><strong>Removing blockers</strong> – Identifying and clearing the path for others to succeed.</li>
-    <li><strong>Developing people</strong> – Investing time in coaching rather than fixing.</li>
-    <li><strong>Creating trust</strong> – Giving ownership away and resisting the urge to take it back.</li>
-  </ul>
+    <div class="pf-post__callout">
+      "The best managers often become less visible operationally because their teams run smoothly without constant intervention."
+    </div>
 
-  <h2><em>A Question Every New Manager Should Ask</em></h2>
-  <p>Instead of asking: <em>“How can I do this better?”</em></p>
-  <p>Ask: <strong>“How can I help the team do this better?”</strong></p>
-  <p>That single mindset change transforms management performance from a bottleneck into a catalyst.</p>
+    <h2><em>What Good Leadership Looks Like</em></h2>
+    <p>Effective managers shift focus toward multiplier behaviours:</p>
+    <ul>
+      <li><strong>Setting direction</strong> – Making priorities clear so the team can move autonomously.</li>
+      <li><strong>Removing blockers</strong> – Identifying and clearing the path for others to succeed.</li>
+      <li><strong>Developing people</strong> – Investing time in coaching rather than fixing.</li>
+      <li><strong>Creating trust</strong> – Giving ownership away and resisting the urge to take it back.</li>
+    </ul>
 
-  <p><strong>Final Thought:</strong> Leadership is not a reward for technical success. It is a new profession with new responsibilities. Organisations that recognise this early and train managers properly create stronger teams, higher retention, and better long term results.</p>
+    <h2><em>A Question Every New Manager Should Ask</em></h2>
+    <p>Instead of asking: <em>"How can I do this better?"</em></p>
+    <p>Ask: <strong>"How can I help the team do this better?"</strong></p>
+    <p>That single mindset change transforms management performance from a bottleneck into a catalyst.</p>
 
+    <p><strong>Final Thought:</strong> Leadership is not a reward for technical success. It is a new profession with new responsibilities. Organisations that recognise this early and train managers properly create stronger teams, higher retention, and better long term results.</p>
 
     <div class="pf-post__cta">
-    <div class="pf-post__cta-cover">
-      <img src="https://www.peterfarrarbooks.com/images/leadership.jpg" alt="The Leadership & Culture Fix by Peter Farrar">
-    </div>
-    <div class="pf-post__cta-text">
-      <div class="pf-post__cta-label">Referenced in this post</div>
-      <div class="pf-post__cta-title">Leadership: The Culture Fix</div>
-      <p class="pf-post__cta-desc">Master the transition from 'doing' to 'leading'. Learn how to develop managers who multiply capability rather than centralising it.</p>
-      <div class="pf-post__cta-links">
-        
-        
-        <a href="/books" class="pf-primary">View the Books</a>
-        
-        
-        
-        
-        <a href="/coaching">Leadership Coaching</a>
+      <div class="pf-post__cta-cover">
+        <img src="https://www.peterfarrarbooks.com/images/leadership.jpg" alt="The Leadership & Culture Fix by Peter Farrar">
+      </div>
+      <div class="pf-post__cta-text">
+        <div class="pf-post__cta-label">Referenced in this post</div>
+        <div class="pf-post__cta-title">Leadership: The Culture Fix</div>
+        <p class="pf-post__cta-desc">Master the transition from 'doing' to 'leading'. Learn how to develop managers who multiply capability rather than centralising it.</p>
+        <div class="pf-post__cta-links">
+          <a href="/books" class="pf-primary">View the Books</a>
+          <a href="/coaching">Leadership Coaching</a>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-  
-
- <!-- Post content ends -->
-</main> 
+  </div><!-- end pf-post -->
 
   <!-- ============================================ -->
-<!-- START: Comments Section - paste before </main> -->
-<!-- ============================================ -->
-<div id="cusdis_thread"
- <div class="container" style="overflow:hidden;">
-  <div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="10f4e8c2-3f6d-4baf-82da-9ade2f7ed9b3"
-  data-page-id="from-top-performer-to-top-leader"
-  data-page-url="https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader"
-  data-page-title="From Top Performer to Top Leader - Why Great Employees Often Struggle as Managers | Peter Farrar Books"
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-
-<!-- ============================================ -->
-<!-- END: Comments Section                        -->
-<!-- ============================================ -->
+  <!-- START: Comments Section -->
+  <!-- ============================================ -->
+  <div class="comments-wrap">
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="10f4e8c2-3f6d-4baf-82da-9ade2f7ed9b3"
+      data-page-id="from-top-performer-to-top-leader"
+      data-page-url="https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader"
+      data-page-title="From Top Performer to Top Leader - Why Great Employees Often Struggle as Managers"
+    ></div>
+  </div>
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  <!-- ============================================ -->
+  <!-- END: Comments Section -->
+  <!-- ============================================ -->
 
 </main>
 
@@ -411,8 +406,6 @@
       <p>&copy; Peter Farrar. All Rights Reserved. | <a href="/privacy">Privacy Policy</a></p>
     </div>
   </div>
-
-
 </footer>
 
 <script src="/js/main.js"></script>
