@@ -491,67 +491,7 @@
 
     <p><strong>Final Thought:</strong> Leadership is not a reward for technical success. It is a new profession with new responsibilities. Organisations that recognise this early and train managers properly create stronger teams, higher retention, and better long term results.</p>
 
-    
-  <section class="comments-section">
 
-    <p class="comments-section__title">Leave a Comment</p>
-
-    <form id="commentForm" class="comment-form"
-          action="https://formspree.io/f/xjgplodo"
-          method="POST">
-
-      <div class="comment-form__row">
-        <div class="comment-form__field">
-          <label for="comment-name">Name</label>
-          <input id="comment-name" type="text" name="name"
-                 placeholder="Your Name" required>
-        </div>
-        <div class="comment-form__field">
-          <label for="comment-email">
-            Email <span class="comment-form__note-inline">(not published)</span>
-          </label>
-          <input id="comment-email" type="email" name="email"
-                 placeholder="your@email.com" required>
-        </div>
-      </div>
-
-      <div class="comment-form__field">
-        <label for="comment-message">Comment</label>
-        <textarea id="comment-message" name="message"
-                  placeholder="Your comment..." required></textarea>
-      </div>
-
-      <button type="submit">Submit Comment</button>
-      <p class="comment-form__note">Comments are moderated and will appear once approved.</p>
-
-    </form>
-
-    <div class="comment-success" id="commentSuccess">
-      Thank you — your comment has been received and will be reviewed shortly.
-    </div>
-
-  </section>
-
-  <!-- ════ START: APPROVED COMMENTS
-       No comments yet? Leave this block exactly as-is — nothing renders.
-       Have an approved comment? Uncomment the title, add a comment block.
-       ════ -->
-  <div class="approved-comments">
-
-    <!-- Uncomment when you have at least one approved comment:
-    <p class="approved-comments__title">Reader Comments</p>
-    -->
-
-    <!-- EXAMPLE — copy this block for each approved comment, then delete this example -->
-    <!--
-    <div class="comment">
-      <p class="comment-author">John Smith <span>— 5 May 2026</span></p>
-      <p class="comment-text">Really useful post — the section on zones was particularly clear.</p>
-    </div>
-    -->
-
-  </div>
-  <!-- ════ END: APPROVED COMMENTS ════ -->
   <div class="pf-post__cta">
     <div class="pf-post__cta-cover">
       <img src="https://www.peterfarrarbooks.com/images/leadership.jpg" alt="Leadership The Culture Fix">
@@ -566,6 +506,9 @@
     </div>
   </div>
 </div>
+    
+  </div>
+
 </main>
 
 <footer class="site-footer">
@@ -576,7 +519,7 @@
       <p>Author · Photographer · Leadership Expert</p>
     </div>
     <div class="footer-nav">
-      <p class="footer-heading">Pages</p>
+      <h3>Pages</h3>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/books">Published Books</a></li>
@@ -584,12 +527,12 @@
         <li><a href="/blog">Blog</a></li>
         <li><a href="/coaching">Coaching</a></li>
         <li><a href="/about">About Peter</a></li>
-        <li><a href="/contact">Contact</a></li> 
+        <li><a href="/contact">Contact</a></li>
         <li><a href="/privacy">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="footer-nav">
-      <p class="footer-heading">Books</p>
+      <h3>Books</h3>
       <ul>
         <li><a href="/books#series">Photography Series</a></li>
         <li><a href="/books#field-guide">Complete Field Guide</a></li>
@@ -598,7 +541,7 @@
       </ul>
     </div>
     <div class="footer-social">
-      <p class="footer-heading">Connect</p>
+      <h3>Connect</h3>
       <ul>
         <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
         <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
@@ -615,24 +558,5 @@
 </footer>
 
 <script src="/js/main.js"></script>
-
-<script>
-  const form = document.getElementById('commentForm');
-  const success = document.getElementById('commentSuccess');
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const response = await fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
-    if (response.ok) {
-      form.style.display = 'none';
-      success.style.display = 'block';
-    }
-  });
-</script>
-
 </body>
 </html>
