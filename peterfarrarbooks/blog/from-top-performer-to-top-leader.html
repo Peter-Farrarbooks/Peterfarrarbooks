@@ -148,9 +148,21 @@
     background: #b08559;
     flex-shrink: 0;
   }
-  .comment-form { display: flex; flex-direction: column; gap: 16px; }
-  .comment-form__row { display: flex; gap: 16px; }
-  .comment-form__field { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .comment-form__row {
+    display: flex;
+    gap: 16px;
+  }
+  .comment-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
   .comment-form__field label {
     font-family: 'Montserrat', sans-serif;
     font-size: 9px;
@@ -182,7 +194,10 @@
   .comment-form textarea:focus { border-color: rgba(176,133,89,0.6); }
   .comment-form input::placeholder,
   .comment-form textarea::placeholder { color: rgba(255,255,255,0.25); }
-  .comment-form textarea { min-height: 140px; resize: vertical; }
+  .comment-form textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
   .comment-form button {
     align-self: flex-start;
     font-family: 'Montserrat', sans-serif;
@@ -211,6 +226,7 @@
     color: rgba(255,255,255,0.6);
     padding: 20px 0;
   }
+
   .approved-comments {
     margin-top: 48px;
     display: flex;
@@ -271,67 +287,34 @@
     color: rgba(255,255,255,0.82);
     line-height: 1.85;
   }
-  .pf-post h1 { font-size: clamp(32px, 4.5vw, 52px); color: #fff; line-height: 1.1; }
-  .pf-post h2 { font-size: 28px; margin-top: 52px; border-bottom: 1px solid rgba(176,133,89,0.2); }
-  .pf-post__cover img { width: 100%; display: block; }
-  .pf-post__table-wrapper { overflow-x: auto; margin: 2.5rem 0; }
-  .pf-post table { width: 100%; border-collapse: collapse; }
-  .pf-post th, .pf-post td { padding: 15px; border-bottom: 1px solid rgba(176,133,89,0.1); }
+  .pf-post h1 {
+    font-size: clamp(32px, 4.5vw, 52px);
+    color: #fff;
+    line-height: 1.1;
+  }
+  .pf-post h2 {
+    font-size: 28px;
+    margin-top: 52px;
+    border-bottom: 1px solid rgba(176,133,89,0.2);
+  }
+  .pf-post__cover img {
+    width: 100%;
+    display: block;
+  }
+  .pf-post__table-wrapper {
+    overflow-x: auto;
+    margin: 2.5rem 0;
+  }
+  .pf-post table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .pf-post th,
+  .pf-post td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(176,133,89,0.1);
+  }
 
-  .pf-post__label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px; font-weight: 700;
-    letter-spacing: 4px; text-transform: uppercase; color: #b08559;
-    display: flex; align-items: center; gap: 14px; margin-bottom: 22px;
-  }
-  .pf-post__label::before { content: ''; width: 36px; height: 1px; background: #b08559; flex-shrink: 0; }
-  .pf-post__meta {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px; font-weight: 300;
-    letter-spacing: 2px; text-transform: uppercase;
-    color: rgba(255,255,255,0.4); margin-bottom: 40px;
-  }
-  .pf-post__meta span { color: rgba(176,133,89,0.6); margin: 0 8px; }
-  .pf-post__divider {
-    width: 100%; height: 1px;
-    background: linear-gradient(to right, rgba(176,133,89,0.5), rgba(176,133,89,0.1));
-    margin: 0 0 44px;
-  }
-  .pf-post__cover { width: 100%; margin: 0 0 44px; }
-  .pf-post p { margin: 0 0 24px; }
-  .pf-post strong { color: rgba(255,255,255,0.95); font-weight: 500; }
-  .pf-post ul { list-style: none; padding: 0; margin: 0 0 28px; }
-  .pf-post ul li { padding-left: 20px; position: relative; margin-bottom: 10px; color: rgba(255,255,255,0.75); }
-  .pf-post ul li::before { content: ''; position: absolute; left: 0; top: 13px; width: 6px; height: 1px; background: #b08559; }
-  .pf-post__callout {
-    border-left: 2px solid rgba(176,133,89,0.6);
-    margin: 48px 0; padding: 12px 0 12px 32px;
-    font-size: 22px; font-style: italic;
-    color: rgba(255,255,255,0.7); line-height: 1.6;
-  }
-  .pf-post__cta {
-    margin-top: 60px; border-top: 1px solid rgba(176,133,89,0.2);
-    padding-top: 48px; display: flex; gap: 32px; align-items: flex-start;
-  }
-  .pf-post__cta-cover { flex-shrink: 0; width: 100px; }
-  .pf-post__cta-cover img { width: 100%; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
-  .pf-post__cta-text { flex: 1; }
-  .pf-post__cta-label {
-    font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
-    letter-spacing: 3px; text-transform: uppercase; color: #b08559; margin-bottom: 10px;
-  }
-  .pf-post__cta-title { font-family: 'EB Garamond', serif; font-size: 22px; color: #fff; margin: 0 0 10px; }
-  .pf-post__cta-desc { font-family: 'EB Garamond', serif; font-size: 16px; color: rgba(255,255,255,0.55); line-height: 1.7; margin: 0 0 20px; }
-  .pf-post__cta-links { display: flex; gap: 12px; flex-wrap: wrap; }
-  .pf-post__cta-links a {
-    font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
-    letter-spacing: 2px; text-transform: uppercase; padding: 10px 20px;
-    color: #b08559; border: 1px solid rgba(176,133,89,0.4); text-decoration: none;
-    transition: 0.2s; display: inline-block;
-  }
-  .pf-post__cta-links a:hover { background: #b08559; color: #080806; }
-  .pf-post__cta-links a.pf-primary { background: #b08559; color: #080806; border-color: #b08559; }
-  @media (max-width: 560px) { .pf-post__cta { flex-direction: column; gap: 20px; } }
 
 </style>
 </head>
@@ -361,7 +344,6 @@
 </header>
 
 <main>
-
   <div class="container">
     <nav class="post-breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>From Top Performer To Top Leader
@@ -438,8 +420,10 @@
       </div>
     </div>
 
-  </div>
+    <div class="pf-post__table-wrapper">
+    </div>
 
+  </div>
   <section class="comments-section">
 
     <p class="comments-section__title">Leave a Comment</p>
@@ -480,20 +464,26 @@
 
   </section>
 
+  <!-- ════ START: APPROVED COMMENTS
+       No comments yet? Leave this block exactly as-is — nothing renders.
+       Have an approved comment? Uncomment the title, add a comment block.
+       ════ -->
   <div class="approved-comments">
 
     <!-- Uncomment when you have at least one approved comment:
     <p class="approved-comments__title">Reader Comments</p>
     -->
 
-    <!-- Copy this block for each approved comment, then delete this example:
+    <!-- EXAMPLE — copy this block for each approved comment, then delete this example -->
+    <!--
     <div class="comment">
       <p class="comment-author">John Smith <span>— 5 May 2026</span></p>
-      <p class="comment-text">Comment text goes here.</p>
+      <p class="comment-text">Really useful post — the section on zones was particularly clear.</p>
     </div>
     -->
 
   </div>
+  <!-- ════ END: APPROVED COMMENTS ════ -->
 
 </main>
 
@@ -513,7 +503,7 @@
         <li><a href="/blog">Blog</a></li>
         <li><a href="/coaching">Coaching</a></li>
         <li><a href="/about">About Peter</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/contact">Contact</a></li> 
         <li><a href="/privacy">Privacy Policy</a></li>
       </ul>
     </div>
