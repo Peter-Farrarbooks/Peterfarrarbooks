@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
 <link rel="alternate" type="application/rss+xml" title="Peter Farrar Books Blog" href="https://www.peterfarrarbooks.com/feed.xml">
-  <!-- Apple touch and favicon Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/images/appletouch.png">
 <link rel="icon" type="image/png" href="/images/favicon.png">
-  
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="description" content="Why do excellent individual contributors often struggle when promoted? Explore the mindset shift required to move from 'doing' to 'enabling'.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader" />
+<link rel="canonical" href="https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader.html" />
 <title>From Top Performer to Top Leader - Why Great Employees Often Struggle as Managers | Peter Farrar Books</title>
-
 <meta property="og:title" content="From Top Performer to Top Leader - Why Great Employees Often Struggle as Managers">
 <meta property="og:description" content="Why do excellent individual contributors often struggle when promoted? Explore the mindset shift required to move from 'doing' to 'enabling'.">
 <meta property="og:image" content="https://www.peterfarrarbooks.com/images/managers1.jpg">
-<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader">
+<meta property="og:url" content="https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader.html">
+
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Peter Farrar Books">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -76,8 +77,7 @@
     "@id": "https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader.html"
   },
   "inLanguage": "en-GB",
-  "keywords": "Transition to Management, Individual Contributor to Manager, Leadership Mindset, Delegation Skills, Team Growth",
-  "articleSection": "Leadership & Culture"
+  "keywords": "Transition to Management, Individual Contributor to Manager, Leadership Mindset, Delegation Skills, Team Growth"
 }
 </script>
 
@@ -92,154 +92,249 @@
 <link rel="stylesheet" href="/css/styles.css">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;600;700&display=swap');
 
-/* Breadcrumb & back nav */
-.post-breadcrumb {
-  padding: 24px 0 0;
-  font-family: var(--font-sans);
-  font-size: 0.72rem; font-weight: 300;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--text-dim);
-}
-.post-breadcrumb a { color: var(--gold); text-decoration: none; }
-.post-breadcrumb a:hover { color: var(--gold-light); }
-.post-breadcrumb span { margin: 0 6px; color: var(--text-dim); }
+  .post-breadcrumb {
+    padding: 24px 0 0;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .post-breadcrumb a { color: var(--gold); text-decoration: none; }
+  .post-breadcrumb a:hover { color: var(--gold-light); }
+  .post-breadcrumb span { margin: 0 6px; color: var(--text-muted); }
 
-.post-back {
-  display: inline-flex; align-items: center; gap: 7px;
-  font-family: var(--font-sans);
-  font-size: 0.7rem; font-weight: 700;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--text-dim); text-decoration: none;
-  padding: 16px 0 0; transition: color var(--transition);
-}
-.post-back::before { content: '←'; }
-.post-back:hover { color: var(--gold); }
+  .post-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 16px 0 0;
+    transition: color var(--transition);
+  }
+  .post-back::before { content: '←'; }
+  .post-back:hover { color: var(--gold); }
 
-/* Post layout */
-.pf-post {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 40px 24px 80px;
-  font-family: 'EB Garamond', serif;
-  font-size: 19px;
-  color: rgba(255,255,255,0.82);
-  line-height: 1.85;
-}
-.pf-post * { box-sizing: border-box; }
+  .comments-section {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+    border-top: 1px solid rgba(176,133,89,0.2);
+  }
+  .comments-section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b08559;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .comments-section__title::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #b08559;
+    flex-shrink: 0;
+  }
+  .comment-form { display: flex; flex-direction: column; gap: 16px; }
+  .comment-form__row { display: flex; gap: 16px; }
+  .comment-form__field { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .comment-form__field label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+  }
+  .comment-form__note-inline {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    color: rgba(255,255,255,0.25);
+  }
+  .comment-form input,
+  .comment-form textarea {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(176,133,89,0.25);
+    color: rgba(255,255,255,0.82);
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .comment-form input:focus,
+  .comment-form textarea:focus { border-color: rgba(176,133,89,0.6); }
+  .comment-form input::placeholder,
+  .comment-form textarea::placeholder { color: rgba(255,255,255,0.25); }
+  .comment-form textarea { min-height: 140px; resize: vertical; }
+  .comment-form button {
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    background: #b08559;
+    color: #080806;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .comment-form button:hover { opacity: 0.85; }
+  .comment-form__note {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.05em;
+  }
+  .comment-success {
+    display: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.6);
+    padding: 20px 0;
+  }
+  .approved-comments {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .approved-comments__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b08559;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .approved-comments__title::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #b08559;
+    flex-shrink: 0;
+  }
+  .comment {
+    border-left: 2px solid rgba(176,133,89,0.25);
+    padding: 4px 0 4px 20px;
+  }
+  .comment-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 8px;
+  }
+  .comment-author span {
+    color: rgba(176,133,89,0.5);
+    font-weight: 300;
+    margin-left: 8px;
+  }
+  .comment-text {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin: 0;
+  }
 
-.pf-post__label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px; font-weight: 700;
-  letter-spacing: 4px; text-transform: uppercase; color: #b08559;
-  display: flex; align-items: center; gap: 14px; margin-bottom: 22px;
-}
-.pf-post__label::before {
-  content: ''; width: 36px; height: 1px; background: #b08559; flex-shrink: 0;
-}
+  .pf-post {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.85;
+  }
+  .pf-post h1 { font-size: clamp(32px, 4.5vw, 52px); color: #fff; line-height: 1.1; }
+  .pf-post h2 { font-size: 28px; margin-top: 52px; border-bottom: 1px solid rgba(176,133,89,0.2); }
+  .pf-post__cover img { width: 100%; display: block; }
+  .pf-post__table-wrapper { overflow-x: auto; margin: 2.5rem 0; }
+  .pf-post table { width: 100%; border-collapse: collapse; }
+  .pf-post th, .pf-post td { padding: 15px; border-bottom: 1px solid rgba(176,133,89,0.1); }
 
-.pf-post h1 {
-  font-family: 'EB Garamond', serif;
-  font-size: clamp(32px, 4.5vw, 52px); font-weight: 400;
-  color: #fff; line-height: 1.1; margin: 0 0 12px;
-}
-.pf-post h1 em { font-style: italic; color: #b08559; }
+  .pf-post__label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 4px; text-transform: uppercase; color: #b08559;
+    display: flex; align-items: center; gap: 14px; margin-bottom: 22px;
+  }
+  .pf-post__label::before { content: ''; width: 36px; height: 1px; background: #b08559; flex-shrink: 0; }
+  .pf-post__meta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px; font-weight: 300;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: rgba(255,255,255,0.4); margin-bottom: 40px;
+  }
+  .pf-post__meta span { color: rgba(176,133,89,0.6); margin: 0 8px; }
+  .pf-post__divider {
+    width: 100%; height: 1px;
+    background: linear-gradient(to right, rgba(176,133,89,0.5), rgba(176,133,89,0.1));
+    margin: 0 0 44px;
+  }
+  .pf-post__cover { width: 100%; margin: 0 0 44px; }
+  .pf-post p { margin: 0 0 24px; }
+  .pf-post strong { color: rgba(255,255,255,0.95); font-weight: 500; }
+  .pf-post ul { list-style: none; padding: 0; margin: 0 0 28px; }
+  .pf-post ul li { padding-left: 20px; position: relative; margin-bottom: 10px; color: rgba(255,255,255,0.75); }
+  .pf-post ul li::before { content: ''; position: absolute; left: 0; top: 13px; width: 6px; height: 1px; background: #b08559; }
+  .pf-post__callout {
+    border-left: 2px solid rgba(176,133,89,0.6);
+    margin: 48px 0; padding: 12px 0 12px 32px;
+    font-size: 22px; font-style: italic;
+    color: rgba(255,255,255,0.7); line-height: 1.6;
+  }
+  .pf-post__cta {
+    margin-top: 60px; border-top: 1px solid rgba(176,133,89,0.2);
+    padding-top: 48px; display: flex; gap: 32px; align-items: flex-start;
+  }
+  .pf-post__cta-cover { flex-shrink: 0; width: 100px; }
+  .pf-post__cta-cover img { width: 100%; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
+  .pf-post__cta-text { flex: 1; }
+  .pf-post__cta-label {
+    font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+    letter-spacing: 3px; text-transform: uppercase; color: #b08559; margin-bottom: 10px;
+  }
+  .pf-post__cta-title { font-family: 'EB Garamond', serif; font-size: 22px; color: #fff; margin: 0 0 10px; }
+  .pf-post__cta-desc { font-family: 'EB Garamond', serif; font-size: 16px; color: rgba(255,255,255,0.55); line-height: 1.7; margin: 0 0 20px; }
+  .pf-post__cta-links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .pf-post__cta-links a {
+    font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase; padding: 10px 20px;
+    color: #b08559; border: 1px solid rgba(176,133,89,0.4); text-decoration: none;
+    transition: 0.2s; display: inline-block;
+  }
+  .pf-post__cta-links a:hover { background: #b08559; color: #080806; }
+  .pf-post__cta-links a.pf-primary { background: #b08559; color: #080806; border-color: #b08559; }
+  @media (max-width: 560px) { .pf-post__cta { flex-direction: column; gap: 20px; } }
 
-.pf-post__meta {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px; font-weight: 300;
-  letter-spacing: 2px; text-transform: uppercase;
-  color: rgba(255,255,255,0.4); margin-bottom: 40px;
-}
-.pf-post__meta span { color: rgba(176,133,89,0.6); margin: 0 8px; }
-
-.pf-post__divider {
-  width: 100%; height: 1px;
-  background: linear-gradient(to right, rgba(176,133,89,0.5), rgba(176,133,89,0.1));
-  margin: 0 0 44px;
-}
-
-.pf-post__cover { width: 100%; margin: 0 0 44px; }
-.pf-post__cover img {
-  width: 100%; height: auto; display: block;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
-}
-
-.pf-post p { margin: 0 0 24px; }
-.pf-post strong { color: rgba(255,255,255,0.95); font-weight: 500; }
-
-.pf-post h2 {
-  font-family: 'EB Garamond', serif;
-  font-size: 28px; font-weight: 400; color: #fff;
-  line-height: 1.2; margin: 52px 0 16px;
-  padding-bottom: 10px; border-bottom: 1px solid rgba(176,133,89,0.2);
-}
-
-.pf-post ul { list-style: none; padding: 0; margin: 0 0 28px; }
-.pf-post ul li {
-  padding-left: 20px; position: relative;
-  margin-bottom: 10px; color: rgba(255,255,255,0.75);
-}
-.pf-post ul li::before {
-  content: ''; position: absolute; left: 0; top: 13px;
-  width: 6px; height: 1px; background: #b08559;
-}
-
-.pf-post__callout {
-  border-left: 2px solid rgba(176,133,89,0.6);
-  margin: 48px 0; padding: 12px 0 12px 32px;
-  font-size: 22px; font-style: italic;
-  color: rgba(255,255,255,0.7); line-height: 1.6;
-}
-
-.pf-post__cta {
-  margin-top: 60px; border-top: 1px solid rgba(176,133,89,0.2);
-  padding-top: 48px; display: flex; gap: 32px; align-items: flex-start;
-}
-.pf-post__cta-cover { flex-shrink: 0; width: 100px; }
-.pf-post__cta-cover img { width: 100%; height: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5)); }
-.pf-post__cta-text { flex: 1; }
-.pf-post__cta-label {
-  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
-  letter-spacing: 3px; text-transform: uppercase; color: #b08559; margin-bottom: 10px;
-}
-.pf-post__cta-title {
-  font-family: 'EB Garamond', serif; font-size: 22px; color: #fff; margin: 0 0 10px;
-}
-.pf-post__cta-desc {
-  font-family: 'EB Garamond', serif; font-size: 16px;
-  color: rgba(255,255,255,0.55); line-height: 1.7; margin: 0 0 20px;
-}
-.pf-post__cta-links { display: flex; gap: 12px; flex-wrap: wrap; }
-.pf-post__cta-links a {
-  font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase; padding: 10px 20px;
-  color: #b08559; border: 1px solid rgba(176,133,89,0.4); text-decoration: none;
-  transition: 0.2s; display: inline-block;
-}
-.pf-post__cta-links a:hover { background: #b08559; color: #080806; }
-.pf-post__cta-links a.pf-primary { background: #b08559; color: #080806; border-color: #b08559; }
-
-@media (max-width: 560px) {
-  .pf-post__cta { flex-direction: column; gap: 20px; }
-}
-
-/* Cusdis comments */
-.comments-wrap {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 40px 24px 60px;
-  overflow: hidden;
-}
-#cusdis_thread iframe {
-  transform-origin: top left;
-  transform: scale(0.85);
-  width: 117% !important;
-}
 </style>
 </head>
-
 <body>
 
 <header class="site-header">
@@ -251,7 +346,7 @@
       </a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main navigation">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/books">Books</a></li>
@@ -275,6 +370,7 @@
   </div>
 
   <div class="pf-post">
+
     <div class="pf-post__label">Leadership &amp; Culture</div>
 
     <h1>From Top Performer to Top Leader – <em>Why Great Employees Often Struggle as Managers</em></h1>
@@ -326,21 +422,26 @@
     <p>That single mindset change transforms management performance from a bottleneck into a catalyst.</p>
 
     <p><strong>Final Thought:</strong> Leadership is not a reward for technical success. It is a new profession with new responsibilities. Organisations that recognise this early and train managers properly create stronger teams, higher retention, and better long term results.</p>
-  <!-- ════════════════════════════════════════════════════════
-       COMMENTS SECTION
-       Always include the full section below on every post.
 
-       TWO PARTS:
-         1. COMMENT FORM — always present (Formspree handles it)
-         2. APPROVED COMMENTS — only add the <div class="comment">
-            blocks when you have real approved comments to show.
-            Until then, leave the approved-comments div empty
-            (or remove it entirely — either is fine).
-       ════════════════════════════════════════════════════════ -->
+    <div class="pf-post__cta">
+      <div class="pf-post__cta-cover">
+        <img src="https://www.peterfarrarbooks.com/images/leadership.jpg" alt="The Leadership & Culture Fix by Peter Farrar">
+      </div>
+      <div class="pf-post__cta-text">
+        <div class="pf-post__cta-label">Referenced in this post</div>
+        <div class="pf-post__cta-title">Leadership: The Culture Fix</div>
+        <p class="pf-post__cta-desc">Master the transition from 'doing' to 'leading'. Learn how to develop managers who multiply capability rather than centralising it.</p>
+        <div class="pf-post__cta-links">
+          <a href="/books" class="pf-primary">View the Books</a>
+          <a href="/coaching">Leadership Coaching</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
   <section class="comments-section">
 
-    <!-- ════ START: COMMENT FORM — copy to every post, no edits except Formspree ID ════ -->
-    <!-- EDIT: replace YOUR_FORMSPREE_ID with your actual Formspree endpoint -->
     <p class="comments-section__title">Leave a Comment</p>
 
     <form id="commentForm" class="comment-form"
@@ -376,46 +477,74 @@
     <div class="comment-success" id="commentSuccess">
       Thank you — your comment has been received and will be reviewed shortly.
     </div>
-    <!-- ════ END: COMMENT FORM ════ -->
 
-    <!-- ════ START: APPROVED COMMENTS
-         No comments yet? Leave this block exactly as-is — nothing renders.
-         Have an approved comment? Uncomment the title, add a comment block.
-         ════ -->
-    <div class="approved-comments">
+  </section>
 
-      <!-- Uncomment when you have at least one approved comment:
-      <p class="approved-comments__title">Reader Comments</p>
-      -->
+  <div class="approved-comments">
 
-      <!-- EXAMPLE — copy this block for each approved comment, then delete this example -->
-      <!--
-      <div class="comment">
-        <p class="comment-author">John Smith <span>— 5 May 2026</span></p>
-        <p class="comment-text">Really useful post — the section on delegation was particularly clear.</p>
-      </div>
-      -->
+    <!-- Uncomment when you have at least one approved comment:
+    <p class="approved-comments__title">Reader Comments</p>
+    -->
 
+    <!-- Copy this block for each approved comment, then delete this example:
+    <div class="comment">
+      <p class="comment-author">John Smith <span>— 5 May 2026</span></p>
+      <p class="comment-text">Comment text goes here.</p>
     </div>
-    <!-- ════ END: APPROVED COMMENTS ════ -->
-    <div class="pf-post__cta">
-      <div class="pf-post__cta-cover">
-        <img src="https://www.peterfarrarbooks.com/images/leadership.jpg" alt="The Leadership & Culture Fix by Peter Farrar">
-      </div>
-      <div class="pf-post__cta-text">
-        <div class="pf-post__cta-label">Referenced in this post</div>
-        <div class="pf-post__cta-title">Leadership: The Culture Fix</div>
-        <p class="pf-post__cta-desc">Master the transition from 'doing' to 'leading'. Learn how to develop managers who multiply capability rather than centralising it.</p>
-        <div class="pf-post__cta-links">
-          <a href="/books" class="pf-primary">View the Books</a>
-          <a href="/coaching">Leadership Coaching</a>
-        </div>
-      </div>
-    </div>
-  </div><!-- end pf-post -->
+    -->
+
+  </div>
 
 </main>
-  <!-- ════ START: COMMENT FORM SCRIPT — copy to every post, no edits needed ════ -->
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-name">Peter Farrar</span>
+      <span class="logo-sub">Books</span>
+      <p>Author · Photographer · Leadership Expert</p>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-heading">Pages</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">Published Books</a></li>
+        <li><a href="/coming-soon">Coming 2026</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/coaching">Coaching</a></li>
+        <li><a href="/about">About Peter</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-heading">Books</p>
+      <ul>
+        <li><a href="/books#series">Photography Series</a></li>
+        <li><a href="/books#field-guide">Complete Field Guide</a></li>
+        <li><a href="/books#leadership">Leadership: The Culture Fix</a></li>
+        <li><a href="/coming-soon">Coming Soon</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <p class="footer-heading">Connect</p>
+      <ul>
+        <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/pfarrar/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://x.com/Kennethstudios/" target="_blank" rel="noopener">X (Twitter)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; Peter Farrar. All Rights Reserved. | <a href="/privacy">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+
 <script>
   const form = document.getElementById('commentForm');
   const success = document.getElementById('commentSuccess');
@@ -433,53 +562,6 @@
     }
   });
 </script>
-<!-- ════ END: COMMENT FORM SCRIPT ════ -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="logo-name">Peter Farrar</span>
-      <span class="logo-sub">Books</span>
-      <p>Author · Photographer · Leadership Expert</p>
-    </div>
-    <div class="footer-nav">
-      <h4>Pages</h4>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/books">Published Books</a></li>
-        <li><a href="/coming-soon">Coming 2026</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/coaching">Coaching</a></li>
-        <li><a href="/about">About Peter</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/privacy">Privacy Policy</a></li>
-      </ul>
-    </div>
-    <div class="footer-nav">
-      <h4>Books</h4>
-      <ul>
-        <li><a href="/books#series">Photography Series</a></li>
-        <li><a href="/books#field-guide">Complete Field Guide</a></li>
-        <li><a href="/books#leadership">Leadership: The Culture Fix</a></li>
-        <li><a href="/coming-soon">Coming Soon</a></li>
-      </ul>
-    </div>
-    <div class="footer-social">
-      <h4>Connect</h4>
-      <ul>
-        <li><a href="https://www.facebook.com/KennethLightStudios/" target="_blank" rel="noopener">Facebook</a></li>
-        <li><a href="https://www.instagram.com/kennethlightstudios/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/pfarrar/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://x.com/Kennethstudios/" target="_blank" rel="noopener">X (Twitter)</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <p>&copy; Peter Farrar. All Rights Reserved. | <a href="/privacy">Privacy Policy</a></p>
-    </div>
-  </div>
-</footer>
 
-<script src="/js/main.js"></script>
 </body>
 </html>
