@@ -6,68 +6,67 @@
     <description>Photography insights, leadership thinking, and updates on new books and projects.</description>
     <language>en-gb</language>
     <atom:link href="https://www.peterfarrarbooks.com/feed.xml" rel="self" type="application/rss+xml"/>
-    
     <item>
-      <title><![CDATA[Scaling Photography Business | Peter Farrar Books]]></title>
+      <title><![CDATA[[ TITLE HERE]]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/[-----------------------]</link>
+      <guid>https://www.peterfarrarbooks.com/blog/[-----------------------]</guid>
+      <pubDate>Mon, 18 May 2026 09:00:00 +0000</pubDate>
+      <description><![CDATA[[DESCRIPTION HERE]]]></description>
+      <category>Photography</category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/[IMAGE HERE]" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Good Managers vs Bad Managers: The Behaviours That Shape Every Workplace (Part Two)]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers</link>
+      <guid>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers</guid>
+      <pubDate>Mon, 04 May 2026 09:00:00 +0000</pubDate>
+      <description><![CDATA[What separates strong managers from weak ones? Explore the everyday behaviours that shape trust, performance, and retention at work.]]></description>
+      <category>Leadership</category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/managers2.jpg" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Scaling Photography Business]]></title>
       <link>https://www.peterfarrarbooks.com/blog/scaling-photography-business</link>
       <guid>https://www.peterfarrarbooks.com/blog/scaling-photography-business</guid>
-      <pubDate></pubDate>
+      <pubDate>Mon, 20 Apr 2026 09:00:00 +0000</pubDate>
       <description><![CDATA[How positioning, pricing strategy, and client experience scaled a photography business from $300 to $4,600 per wedding.]]></description>
-      <category></category>
+      <category>photography</category>
       <enclosure url="https://www.peterfarrarbooks.com/images/scaling-up.png" length="0" type="image/jpeg"/>
     </item>
     <item>
       <title><![CDATA[From Top Performer to Top Leader - Why Great Employees Often Struggle as Managers]]></title>
       <link>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader</link>
       <guid>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader</guid>
-      <pubDate></pubDate>
-      <description><![CDATA[Why do excellent individual contributors often struggle when promoted? Explore the mindset shift required to move from 'doing' to 'enabling'.]]></description>
-      <category></category>
+      <pubDate>Mon, 20 Apr 2026 09:00:00 +0000</pubDate>
+      <description><![CDATA[Why do excellent individual contributors often struggle when promoted? Explore the mindset shift required to move from]]></description>
+      <category>Leadership</category>
       <enclosure url="https://www.peterfarrarbooks.com/images/managers1.jpg" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[Good Managers vs Bad Managers: The Behaviours That Shape Every Workplace (Part Two) | Peter Farrar Books]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers</link>
-      <guid>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers</guid>
-      <pubDate></pubDate>
-      <description><![CDATA[What separates strong managers from weak ones? Explore the everyday behaviours that shape trust, performance, and retention at work.]]></description>
-      <category></category>
-      <enclosure url="https://www.peterfarrarbooks.com/images/managers2.jpg" length="0" type="image/jpeg"/>
-    </item>
-    <item>
-      <title><![CDATA[The Zone System Explained – Part One: Seeing Light Like Ansel Adams | Peter Farrar Books]]></title>
+      <title><![CDATA[The Zone System Explained – Part One: Seeing Light Like Ansel Adams]]></title>
       <link>https://www.peterfarrarbooks.com/blog/zone-system-part-one</link>
       <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-one</guid>
-      <pubDate></pubDate>
-      <description><![CDATA[Discover how Ansel Adams' Zone System can transform your photography from recording a scene into interpreting light with intention.]]></description>
-      <category></category>
+      <pubDate>Mon, 20 Apr 2026 09:00:00 +0000</pubDate>
+      <description><![CDATA[Discover how Ansel Adams]]></description>
+      <category>Photography</category>
       <enclosure url="https://www.peterfarrarbooks.com/images/zone1.png" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[[ TITLE HERE] | Peter Farrar Books]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/[-----SLUG URL HERE----------------------]</link>
-      <guid>https://www.peterfarrarbooks.com/blog/[-----SLUG URL HERE----------------------]</guid>
-      <pubDate></pubDate>
-      <description><![CDATA[[DESCRIPTION HERE]]]></description>
-      <category></category>
-      <enclosure url="https://www.peterfarrarbooks.com/images/[IMAGE HERE]" length="0" type="image/jpeg"/>
-    </item>
-    <item>
-      <title><![CDATA[ITIL 4 in Practice: What Companies Expect vs Real Service Management Leadership | Peter Farrar Books]]></title>
+      <title><![CDATA[ITIL 4 in Practice: What Companies Expect vs Real Service Management Leadership]]></title>
       <link>https://www.peterfarrarbooks.com/blog/itil-4-in-practice</link>
       <guid>https://www.peterfarrarbooks.com/blog/itil-4-in-practice</guid>
-      <pubDate></pubDate>
+      <pubDate>Mon, 20 Apr 2026 09:00:00 +0000</pubDate>
       <description><![CDATA[A real-world look at ITIL 4 frameworks, service desk leadership, and how culture drives ITSM success over pure theory.]]></description>
-      <category></category>
+      <category>Leadership</category>
       <enclosure url="https://www.peterfarrarbooks.com/images/itil-4.png" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[The Zone System Explained - Part Two | Peter Farrar Books]]></title>
+      <title><![CDATA[The Zone System Explained - Part Two]]></title>
       <link>https://www.peterfarrarbooks.com/blog/zone-system-part-two</link>
       <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-two</guid>
-      <pubDate></pubDate>
+      <pubDate>Mon, 20 Apr 2026 09:00:00 +0000</pubDate>
       <description><![CDATA[Applying the Zone System in Modern Digital Photography]]></description>
-      <category></category>
+      <category>Photography</category>
       <enclosure url="https://www.peterfarrarbooks.com/images/zone2.jpg" length="0" type="image/jpeg"/>
     </item>
   </channel>
