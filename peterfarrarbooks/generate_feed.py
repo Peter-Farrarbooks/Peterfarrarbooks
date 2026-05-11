@@ -80,7 +80,7 @@ def clean_title(title):
 # ── Collect posts ──────────────────────────────────────────────
 posts = []
 
-for html_file in BLOG_DIR.rglob("*.html"):
+for html_file in list(BLOG_DIR.rglob("*.html")) + [f for f in BLOG_DIR.rglob("*") if f.is_file() and f.suffix == "" and f.name != "index"]:
     if html_file.name == "index.html":
         continue
     content = html_file.read_text(encoding="utf-8", errors="ignore")
