@@ -6,58 +6,86 @@
     <description>Photography insights, leadership thinking, and updates on new books and projects.</description>
     <language>en-gb</language>
     <atom:link href="https://www.peterfarrarbooks.com/feed.xml" rel="self" type="application/rss+xml"/>
+    
     <item>
-      <title><![CDATA[Good Managers vs Bad Managers – The Behaviours That Shape Every Workplace]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers/</link>
-      <guid>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers/</guid>
-      <pubDate>Mon, 04 May 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[Managers have a disproportionate influence over motivation, trust, performance, and retention. It is not job titles or corporate slogans that shape culture — it is the small behaviours repeated every day.]]></description>
-      <category>Leadership and Culture</category>
-      <enclosure url="https://www.peterfarrarbooks.com/images/managers2.jpg" length="0" type="image/jpeg"/>
+      <title><![CDATA[Mastering the Architecture of a Great Landscape (Part One) | Peter Farrar Books]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape1</link>
+      <guid>https://www.peterfarrarbooks.com/blog/mastering-a-great-landscape1</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[Foundations, Form, and the Principles That Shape Lasting Design]]></description>
+      <category></category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/mastering-1.png" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[From Top Performer to Top Leader – Why Great Employees Often Struggle as Managers]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader/</link>
-      <guid>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader/</guid>
-      <pubDate>Sun, 20 Apr 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[Excellent individual contributors do not automatically become effective leaders. Management requires a complete shift in identity.]]></description>
-      <category>Leadership and Culture</category>
+      <title><![CDATA[Scaling Photography Business | Peter Farrar Books]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/scaling-photography-business</link>
+      <guid>https://www.peterfarrarbooks.com/blog/scaling-photography-business</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[How positioning, pricing strategy, and client experience scaled a photography business from $300 to $4,600 per wedding.]]></description>
+      <category></category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/scaling-up.png" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[From Top Performer to Top Leader - Why Great Employees Often Struggle as Managers]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader</link>
+      <guid>https://www.peterfarrarbooks.com/blog/from-top-performer-to-top-leader</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[Why do excellent individual contributors often struggle when promoted? Explore the mindset shift required to move from 'doing' to 'enabling'.]]></description>
+      <category></category>
       <enclosure url="https://www.peterfarrarbooks.com/images/managers1.jpg" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[ITIL 4 in Practice: What Companies Expect vs Real Service Management Leadership]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/itil-4-in-practice/</link>
-      <guid>https://www.peterfarrarbooks.com/blog/itil-4-in-practice/</guid>
-      <pubDate>Sat, 19 Apr 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[Service management is far more dependent on leadership, culture, and execution than any framework alone. This gap is where most service desks succeed or fail.]]></description>
-      <category>Leadership and Culture</category>
-      <enclosure url="https://www.peterfarrarbooks.com/images/leadership.jpg" length="0" type="image/jpeg"/>
+      <title><![CDATA[Good Managers vs Bad Managers: The Behaviours That Shape Every Workplace (Part Two) | Peter Farrar Books]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers</link>
+      <guid>https://www.peterfarrarbooks.com/blog/good-managers-vs-bad-managers</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[What separates strong managers from weak ones? Explore the everyday behaviours that shape trust, performance, and retention at work.]]></description>
+      <category></category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/managers2.jpg" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[The Zone System Explained – Part Two: Applying It in Modern Digital Photography]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/zone-system-part-two/</link>
-      <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-two/</guid>
-      <pubDate>Fri, 18 Apr 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[The tools have changed, but the thinking has not. How to apply the Zone System with histograms and RAW files in the digital era.]]></description>
-      <category>Photography</category>
-      <enclosure url="https://www.peterfarrarbooks.com/images/photography-field-guide.jpg" length="0" type="image/jpeg"/>
+      <title><![CDATA[The Zone System Explained – Part One: Seeing Light Like Ansel Adams | Peter Farrar Books]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/zone-system-part-one</link>
+      <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-one</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[Discover how Ansel Adams' Zone System can transform your photography from recording a scene into interpreting light with intention.]]></description>
+      <category></category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/zone1.png" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[The Zone System Explained – Part One: Seeing Light Like Ansel Adams]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/zone-system-part-one/</link>
-      <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-one/</guid>
-      <pubDate>Thu, 17 Apr 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[At the centre of Ansel Adams' mastery was the Zone System — one of the most useful ways any photographer can learn to truly see a scene.]]></description>
-      <category>Photography</category>
-      <enclosure url="https://www.peterfarrarbooks.com/images/zone1.jpg" length="0" type="image/jpeg"/>
+      <title><![CDATA[The Shadow Side of Success: (Part One) | Peter Farrar Books]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/shadow-side-of-success1</link>
+      <guid>https://www.peterfarrarbooks.com/blog/shadow-side-of-success1</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[Why ]]></description>
+      <category></category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/shad-success1.png" length="0" type="image/jpeg"/>
     </item>
     <item>
-      <title><![CDATA[From $300 to $4,600: What Actually Scales a Photography Business]]></title>
-      <link>https://www.peterfarrarbooks.com/blog/scaling-photography-business/</link>
-      <guid>https://www.peterfarrarbooks.com/blog/scaling-photography-business/</guid>
-      <pubDate>Wed, 16 Apr 2026 09:00:00 +0000</pubDate>
-      <description><![CDATA[Most photography businesses don't fail because of a lack of talent. They fail because of weak positioning, poor pricing strategy, and inconsistent client experience.]]></description>
-      <category>Photography and Business</category>
+      <title><![CDATA[[ TITLE HERE] | Peter Farrar Books]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/[-----SLUG URL HERE----------------------]</link>
+      <guid>https://www.peterfarrarbooks.com/blog/[-----SLUG URL HERE----------------------]</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[[DESCRIPTION HERE]]]></description>
+      <category></category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/[IMAGE HERE]" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[ITIL 4 in Practice: What Companies Expect vs Real Service Management Leadership | Peter Farrar Books]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/itil-4-in-practice</link>
+      <guid>https://www.peterfarrarbooks.com/blog/itil-4-in-practice</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[A real-world look at ITIL 4 frameworks, service desk leadership, and how culture drives ITSM success over pure theory.]]></description>
+      <category></category>
+      <enclosure url="https://www.peterfarrarbooks.com/images/itil-4.png" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[The Zone System Explained - Part Two | Peter Farrar Books]]></title>
+      <link>https://www.peterfarrarbooks.com/blog/zone-system-part-two</link>
+      <guid>https://www.peterfarrarbooks.com/blog/zone-system-part-two</guid>
+      <pubDate></pubDate>
+      <description><![CDATA[Applying the Zone System in Modern Digital Photography]]></description>
+      <category></category>
       <enclosure url="https://www.peterfarrarbooks.com/images/zone2.jpg" length="0" type="image/jpeg"/>
     </item>
   </channel>
