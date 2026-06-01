@@ -389,6 +389,34 @@
     });
   });
 </script>
-
+<script>
+fetch('/feed.xml')
+  .then(r => r.text())
+  .then(str => {
+    const xml = new DOMParser().parseFromString(str, 'text/xml');
+    const items = xml.querySelectorAll('item');
+    const grid = document.querySelector('.blog-grid');
+    if (!grid || items.length < 2) return;
+    grid.innerHTML = '';
+    [0, 1].forEach(i => {
+      const title = items[i].querySelector('title').textContent;
+      const link  = items[i].querySelector('link').textContent;
+      const enc   = items[i].querySelector('enclosure');
+      const img   = enc ? enc.getAttribute('url') : '';
+      const cat   = items[i].querySelector('category').textContent;
+      const path  = link.replace('https://www.peterfarrarbooks.com', '');
+      grid.innerHTML += `
+      <article class="blog-card">
+        <div class="blog-card-img">
+          <img src="${img}" alt="${title}" width="400" height="250">
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-tag">${cat}</span>
+          <h3><a href="${path}">${title}</a></h3>
+        </div>
+      </article>`;
+    });
+  });
+</script>
 </body>
 </html>
